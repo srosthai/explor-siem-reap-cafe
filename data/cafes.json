@@ -521,5 +521,93 @@
     "powerOutlets": "Many",
     "seating": "Modern tables + bar seating",
     "music": "Lo-fi"
+  },
+  {
+    "name": "TUBE COFFEE Sivutha",
+    "slug": "tube-coffee-sivutha",
+    "area": "Sivutha Boulevard",
+    "addressShort": "62 Sivutha Blvd",
+    "googleMapsUrl": "https://maps.google.com/?q=TUBE+COFFEE+62+Sivutha+Blvd+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3598,
+      "lng": 103.8565
+    },
+    "minPriceUsd": 1.5,
+    "topDrink": {
+      "name": "Iced Caramel Macchiato",
+      "description": "Signature espresso with vanilla and caramel drizzle"
+    },
+    "wifi": {
+      "downloadMbps": 40,
+      "uploadMbps": 12,
+      "latencyMs": 22,
+      "testedAt": "2025-01-16"
+    },
+    "hours": {
+      "open": "06:30",
+      "close": "22:00"
+    },
+    "tags": ["Work-friendly", "Aircon", "Affordable", "Chain"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSgZg8AONSbHcapd_zk47qx9jI9tUWmW5RHxkUb3muRONgxAdptoOH8fs2Z2vDCM95setXk5psQHzcc66uMAyszz51N7t4THS8GQ4TL9nWkV1KAlDZkKfZUWiNWHAl4IRJTag=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLIMu2MaBBj71ubrJBNjxOPO_fzCoo3Mz-pbeihfkL0cLFvgNui-3grFNmpqOG431rYLERImgj4tCYmuXO97R1n2CsD3nOFHSIM-NwRbAZFfmxjWhmYQCWmBSwFzJJ_x4y2Cmr=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzHlCPfRZApLJ2cMLzx_pI6V48wH_moudr-h4crNuoZk81fUVZPIpvK-HO454_3hszcca_XcX-zAhTyXUx3kQZyrJvh8sXhWwgO_4HdBzHWMf1w5L3YpjPENlqq1DW6Qr3f=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXCu1GybGsPJ8spynokb4be-ipzemsGrpZMhBNb6jFegJPjj2C0XwhRNG0mT4DLZ9ZHkO5_84GJuBqFUgIJgG3nO7PPMoqy8OSvVa3GnyOLRRGbpsj_JX7q2RQag5Rep2IdgAk=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Popular Cambodian coffee chain",
+      "Fast service and affordable prices",
+      "London Underground inspired design"
+    ],
+    "vibeScore": 75,
+    "lighting": "Bright",
+    "powerOutlets": "Some",
+    "seating": "Modern tables + counter seating",
+    "music": "Pop"
+  },
+  {
+    "name": "TUBE COFFEE Royal Garden Angkor",
+    "slug": "tube-coffee-royal-garden-angkor",
+    "area": "Wat Bo",
+    "addressShort": "Royal Garden, Wat Bo",
+    "googleMapsUrl": "https://maps.google.com/?q=TUBE+COFFEE+Royal+Garden+Angkor+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3637,
+      "lng": 103.8607
+    },
+    "minPriceUsd": 1.5,
+    "topDrink": {
+      "name": "Iced Latte",
+      "description": "Smooth espresso with fresh milk over ice"
+    },
+    "wifi": {
+      "downloadMbps": 42,
+      "uploadMbps": 14,
+      "latencyMs": 20,
+      "testedAt": "2025-01-17"
+    },
+    "hours": {
+      "open": "06:30",
+      "close": "22:00"
+    },
+    "tags": ["Work-friendly", "Aircon", "Affordable", "Chain", "Outdoor"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxl6UNtx_KpfISY8MP2KqtK5HgkMKorj7ZtgJf7xcgAmYZucNNDEdDAx5iQuhjDBcUQqlh10uawTntJeKM8T77jygloAiHR51jMFAdk7mJj1wSm-KK-unlnZmvlHakV4JLX1eOrT0XOfqCR=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx32szRa_bzg5ZXiThR_XJcMqygtlzoNHLWAOMbUUmChdatlQZ9qdZKsPdtiVDAuyy6SVatgOMFg837jUkodlq4OOzl1xKYzyYIBATofpdo_bEJASX3h6zWgj1_drSUKcWigfCroqAkECcz=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSw52VcBSzT96DXcMI2ksAy45FKPy5uJoqodM7ATi9BEF4XcWHgz2kxzJzbBW0czn-aCQbmZdrlAq1iZp_OFOfW9b0LPONWivrCSkf8yZsn2WC_m1sIXsbbPSnXPGBcf64cJzMsUxtHMT8rk=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXRrAY77Oq5vrZUPA8vmqnT7YgVA-nSjqq09seTjUrHbOORc69MOHm67sVGMM3q6HBwRhWUsFwVXHXmrX2XgIn1YF6JhaOfnH6C_gSQmII2qPxWYSfzO2ubAQ43H6JvxM3SDo7vXAlPQHR=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyvaPre6-Z05Y_rGjlZDis9KmzUYzjpRlYG2LsFO-W4sCm-gPVF42oiKn15LoQumRwcKDt87qPrWhTEIjbzWy5N-BCcUElgy6vC8ZNMRGL_zTrFi-JLG1kwaxDO_j_gh-UGq8FdT9JM3zzD=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzjP23HXLaSCVIB87hCykoy5F-asWE_dS8avZgHeaYmXTNOf93c0GqLApcH8fLvbYWqEAgNPYnknjd9QRoWg16B-oP7GLlSQZg1n95ZS_bZpfteWeWs5QA2y11OFy12LbOT77wd446atsiB=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Located near Royal Gardens",
+      "Scenic garden area setting",
+      "Popular with tourists and locals"
+    ],
+    "vibeScore": 78,
+    "lighting": "Bright",
+    "powerOutlets": "Some",
+    "seating": "Indoor + outdoor seating",
+    "music": "Pop"
   }
 ]
