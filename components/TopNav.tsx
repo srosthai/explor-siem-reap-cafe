@@ -3,10 +3,36 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from './ThemeProvider';
+import { useState, useEffect } from 'react';
 
 export function TopNav() {
   const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
+  const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const isDetailPage = pathname.startsWith('/cafe/') && pathname !== '/cafe';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Show/hide based on scroll direction
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+
+      // Change style based on scroll position
+      setScrolled(currentScrollY > 50);
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   const navLinks = [
     {
@@ -30,8 +56,20 @@ export function TopNav() {
   ];
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-40">
-      <div className="flex items-center gap-1 px-1.5 py-1.5 rounded-full bg-white dark:bg-gray-900 shadow-lg shadow-black/10 dark:shadow-black/30 border border-gray-200 dark:border-gray-800">
+    <nav
+      className={`fixed left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
+        hidden ? '-translate-y-20 opacity-0' : 'translate-y-0 opacity-100'
+      } ${
+        isDetailPage && !scrolled ? 'top-6' : 'top-4'
+      }`}
+    >
+      <div
+        className={`flex items-center gap-1 px-1.5 py-1.5 rounded-full shadow-lg transition-all duration-300 ${
+          isDetailPage && !scrolled
+            ? 'bg-black/30 backdrop-blur-xl border border-white/20 shadow-black/20'
+            : 'bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-black/10 dark:shadow-black/30'
+        }`}
+      >
         {navLinks.map((link) => {
           const isActive =
             link.href === '/'
@@ -45,7 +83,9 @@ export function TopNav() {
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 isActive
                   ? 'bg-blue-500 text-white shadow-sm'
-                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
+                  : isDetailPage && !scrolled
+                    ? 'text-white/80 hover:text-white hover:bg-white/20'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
               }`}
             >
               {link.icon}
@@ -54,11 +94,17 @@ export function TopNav() {
           );
         })}
 
-        <div className="w-px h-6 bg-gray-200 dark:bg-gray-700 mx-1" />
+        <div className={`w-px h-6 mx-1 ${
+          isDetailPage && !scrolled ? 'bg-white/30' : 'bg-gray-200 dark:bg-gray-700'
+        }`} />
 
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+          className={`p-2 rounded-full transition-colors ${
+            isDetailPage && !scrolled
+              ? 'text-white/80 hover:text-white hover:bg-white/20'
+              : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800'
+          }`}
           aria-label="Toggle theme"
         >
           {theme === 'light' ? (

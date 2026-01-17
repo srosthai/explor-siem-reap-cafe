@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { GalleryGrid } from '@/components/GalleryGrid';
@@ -76,14 +75,14 @@ export default async function CafeDetailPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 -mt-[70px]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Hero Section */}
-      <div className="relative h-[50vh] min-h-[400px] max-h-[600px] w-full">
+      {/* Full Cover Hero Section */}
+      <div className="relative h-[65vh] min-h-[500px] max-h-[750px] w-full">
         <Image
           src={cafe.gallery[0] || '/images/placeholder-cafe.jpg'}
           alt={cafe.name}
@@ -92,42 +91,30 @@ export default async function CafeDetailPage({ params }: PageProps) {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-
-        {/* Back Button */}
-        <div className="absolute top-20 left-4 sm:left-6 lg:left-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 backdrop-blur-md text-white text-sm font-medium hover:bg-white/20 transition-colors"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back
-          </Link>
-        </div>
+        {/* Gradient overlay - stronger at bottom for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/20" />
 
         {/* Hero Content */}
         <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-12">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-center gap-3 mb-4">
-              <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-medium ${
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium backdrop-blur-sm ${
                 openStatus.isOpen
-                  ? 'bg-emerald-500 text-white'
-                  : 'bg-gray-500 text-white'
+                  ? 'bg-emerald-500/90 text-white'
+                  : 'bg-gray-500/90 text-white'
               }`}>
                 <span className={`w-2 h-2 rounded-full ${openStatus.isOpen ? 'bg-white animate-pulse' : 'bg-gray-300'}`} />
                 {openStatus.isOpen ? 'Open now' : 'Closed'}
               </span>
-              <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm">
+              <span className="px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-medium">
                 {cafe.area}
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-3 drop-shadow-lg">
               {cafe.name}
             </h1>
-            <p className="text-white/70 text-base sm:text-lg">
-              {formatTime(cafe.hours.open)} - {formatTime(cafe.hours.close)}
+            <p className="text-white/80 text-lg sm:text-xl font-medium">
+              {formatTime(cafe.hours.open)} - {formatTime(cafe.hours.close)} · {cafe.addressShort}
             </p>
           </div>
         </div>
