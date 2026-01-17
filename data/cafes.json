@@ -208,5 +208,318 @@
     "powerOutlets": "Some",
     "seating": "Mixed seating",
     "music": "Pop"
+  },
+  {
+    "name": "The Gray Area",
+    "slug": "the-gray-area",
+    "area": "Sivutha Boulevard",
+    "addressShort": "Sivutha Boulevard",
+    "googleMapsUrl": "https://maps.google.com/?q=The+Gray+Area+Sivutha+Boulevard+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3615,
+      "lng": 103.8568
+    },
+    "minPriceUsd": 2.0,
+    "topDrink": {
+      "name": "Flat White",
+      "description": "Velvety microfoam with a double shot of espresso"
+    },
+    "wifi": {
+      "downloadMbps": 55,
+      "uploadMbps": 18,
+      "latencyMs": 18,
+      "testedAt": "2025-01-15"
+    },
+    "hours": {
+      "open": "07:00",
+      "close": "21:00"
+    },
+    "tags": ["Work-friendly", "Aircon", "Aesthetic", "Power outlets"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIG2RMfdVMrYpGvKR34Skz3xqYb1IQJ67K3FBxRDejrQ6J_uQgvtWnATnlolx0vogpLbswbFxn-cvOagqRdglFehQtbNh_07eYpECF_1HTU9l9Qw-xlfGJqd8F_54GmQAeVnaNQTwJNxq9=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGiS1FsxkuKrvQ5yHNxD16sDY3whNfB8NgxY0pndWBveriw7_HPpd27GlMUU5oSS2_65Sg7oWXnc4xl46KOWM-Y_cNoYihhdDhpn3p5m0RTvEoBwnOBnyZPzqH6gNFWfUpG1sc5W6__Tok=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxhuBZLJLcsq0w2jVylV7CtNW6oB7rGXH9ZDa6iA2MalZ2MHjafpi4yfyng4X9shoypkLHoS8Dria5Ww0X28ZVc3Xk-HycMq3wJjSrD_FspHu1HrIlXjdeDL32cF4GfbOVqniLYyuVM91U=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxRjVX8SfkwKsEmiKZoOjxsHDnmIf2bPz_pL_3qmrwg3YvUnlZSFa4g0_yLoA__P7WdgUfiEDSmNk6BfNVYaCPVoI33RhaaAQNmNRpc28paz_IIlV9fuIKy6_hmRZp4XxMPhRWcaNiC9nk=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzsHPTxuxiAbb2nyQfTaTCrN8fDhnOEhW3y-3S0yVPPz-1mHDbke1tEqNVS_P5pGoDfNTDDGWQk1-Bv7DxzcyviYMIz7nwCSxAD7QjU6XN6SJRI6_0VbjbRD-7qL--nM1yy0j-H8Q43KiSB=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Modern industrial design",
+      "Great for remote work sessions",
+      "Excellent coffee quality"
+    ],
+    "vibeScore": 88,
+    "lighting": "Bright",
+    "powerOutlets": "Many",
+    "seating": "Wood tables + bar seating",
+    "music": "Lo-fi"
+  },
+  {
+    "name": "Siem Reap House",
+    "slug": "siem-reap-house",
+    "area": "Rose Apple Road",
+    "addressShort": "Rose Apple Rd",
+    "googleMapsUrl": "https://maps.google.com/?q=Siem+Reap+House+Rose+Apple+Rd+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3548,
+      "lng": 103.8595
+    },
+    "minPriceUsd": 2.5,
+    "topDrink": {
+      "name": "Coconut Latte",
+      "description": "Creamy coconut milk with a smooth espresso shot"
+    },
+    "wifi": {
+      "downloadMbps": 48,
+      "uploadMbps": 15,
+      "latencyMs": 22,
+      "testedAt": "2025-01-14"
+    },
+    "hours": {
+      "open": "07:30",
+      "close": "20:00"
+    },
+    "tags": ["Cozy", "Aesthetic", "Quiet", "Outdoor"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXJYTpLWh7nKECazTMusyGf1N0mHSAIrd49jL384Y4c_FfNCFqHZGN3ve9fMOcU0gTh0-G8KQJx8pgU0pNIHAcMs6MfS0NhMerVMf5SN6XEAbBc8_QDerwjVYcUdeeFRoFqk0G=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyf5rwP5ptFURbRfsHrLBbxI-LZAp3KYUHJGeJmROl5UWszA6SHuFqz4iiMyP056j2epEZfMD83_g1qx21t4QcfUyaEYxSZQOav8C54nCl4Yb9cyp-_hIxHlEMg0sUeKNQ-Y3rZ=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyGcwu4hUdgdO2sXtAbsHoeoIO-7fLp1KIeu2iSknDmuqrUXaK7tG9yN-k9lC-K5gr4LYDHJoxQ9OoWEvFRBKikU3IjUu5pMZWInQHRj222qxvnSkf5y0HlJkY5Iyw7DVAM98So=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyqDcrSJrZ0J2xcGOb-cfY4guPCEopUT-TtXz5xtA0Sx3cjbof__5FW7l_OfPA8OZJfWkC_sux50Fx0K6C4-GHQii1Baqry_u-6SZUh4GOPv7YBot5crPD1BX1vLw28UUGivCI7=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyemQf6ki14LXJDqGdUmzJdfPVK2dwEUYKZQT04afpYDE1qyq3bl8CP7LIjvjBEuRIQlUD_dqzDXOeOchHyeEtGAsOI4GV8o085Lqf9IUKp2vS1AMzI3d2K_G3bh-2_K0WBBG0Htw=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxEnnOiZXN4JMD-d4v8QTcPm0A775VUZ4_K7iBQIQcQQncyAFr2WOejc12xDyooFYs6rUejDn_acLCNFl7myRU6QQ-V7scVZtUUimvBmqwyNtwZQEJs4ANpASkrWA9rLQ21Hmhhnw=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Beautiful heritage building",
+      "Peaceful garden setting",
+      "Great brunch menu"
+    ],
+    "vibeScore": 92,
+    "lighting": "Warm",
+    "powerOutlets": "Some",
+    "seating": "Rattan chairs + garden seating",
+    "music": "Chill"
+  },
+  {
+    "name": "Bayon Pastry School",
+    "slug": "bayon-pastry-school",
+    "area": "Taphul Road",
+    "addressShort": "Mondul 2 Village, Taphul Rd",
+    "googleMapsUrl": "https://maps.google.com/?q=Bayon+Pastry+School+Taphul+Rd+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3495,
+      "lng": 103.8532
+    },
+    "minPriceUsd": 1.5,
+    "topDrink": {
+      "name": "Iced Mocha",
+      "description": "Rich chocolate blended with espresso and cold milk"
+    },
+    "wifi": {
+      "downloadMbps": 32,
+      "uploadMbps": 10,
+      "latencyMs": 28,
+      "testedAt": "2025-01-13"
+    },
+    "hours": {
+      "open": "07:00",
+      "close": "17:00"
+    },
+    "tags": ["Cozy", "Quiet", "Outdoor", "Social Enterprise"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=800&h=600&fit=crop"
+    ],
+    "notes": [
+      "Social enterprise training disadvantaged youth",
+      "Amazing fresh pastries daily",
+      "Support a great cause while you eat"
+    ],
+    "vibeScore": 86,
+    "lighting": "Bright",
+    "powerOutlets": "Some",
+    "seating": "Indoor + outdoor tables",
+    "music": "Soft background"
+  },
+  {
+    "name": "Studio Matcha",
+    "nameKhmer": "ស្ទូឌីយ៉ូម៉ាឆា",
+    "slug": "studio-matcha",
+    "area": "Water Park Road",
+    "addressShort": "Water Park Road",
+    "googleMapsUrl": "https://maps.google.com/?q=Studio+Matcha+Water+Park+Road+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3580,
+      "lng": 103.8485
+    },
+    "minPriceUsd": 2.5,
+    "topDrink": {
+      "name": "Ceremonial Matcha Latte",
+      "description": "Premium Japanese matcha whisked to perfection"
+    },
+    "wifi": {
+      "downloadMbps": 42,
+      "uploadMbps": 14,
+      "latencyMs": 20,
+      "testedAt": "2025-01-12"
+    },
+    "hours": {
+      "open": "08:00",
+      "close": "18:00"
+    },
+    "tags": ["Aesthetic", "Quiet", "Aircon", "Matcha Specialty"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwEO0JxArPGMt5OZ5CqaGR5n3VU-jcqLpfpKNai5seFyyDb5qIaGxHUS4lmHV4rj3SHqXnkCI2K43bCBWzMHHSzUn9-4FkfB6flRq2aUpPWwP75-5jxxt9AbaJGljIsPECBudxagLmYJZNB=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipNu--mPw9qcHWwPbwC60YMZhIM1i0TduQamO2Ou=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipN2XN_g_MwftzvwsWSp5EWst3CqWX9H0Brqthe_=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipMStAgWTa23BbBgvILqWDmrtaVuP1Q7eBLI8Lkl=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipNnpYJsVqJ8hD3GrH0jvkSunjrheWJGxmMkvdiL=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Matcha lovers paradise",
+      "Beautiful minimalist Japanese design",
+      "Great for Instagram photos"
+    ],
+    "vibeScore": 90,
+    "lighting": "Bright",
+    "powerOutlets": "Some",
+    "seating": "Minimalist wood seating",
+    "music": "Japanese ambient"
+  },
+  {
+    "name": "Matcha Atelier",
+    "slug": "matcha-atelier",
+    "area": "Siem Reap",
+    "addressShort": "Siem Reap City",
+    "googleMapsUrl": "https://maps.google.com/?q=Matcha+Atelier+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3560,
+      "lng": 103.8550
+    },
+    "minPriceUsd": 3.0,
+    "topDrink": {
+      "name": "Signature Matcha",
+      "description": "Artisan crafted matcha with premium ingredients"
+    },
+    "wifi": {
+      "downloadMbps": 50,
+      "uploadMbps": 16,
+      "latencyMs": 18,
+      "testedAt": "2025-01-16"
+    },
+    "hours": {
+      "open": "08:00",
+      "close": "19:00"
+    },
+    "tags": ["Aesthetic", "Matcha Specialty", "Aircon", "Quiet"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0XQU28x-IjqAekkUyjYJCguoJVW-OT2QR7wYv_fJLieymUXyN2vLFHRKCmHH26UMvFakxdMuMzf1osDCfi6D-XAiC8ZctFQjqUhgWVF2qTrtx5yy8G83Sp0WMLfGTZ0lrNxbm=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipMJKaSy1hdIChlJJsq44e2b6mUTd9uOeJnZLP91=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxdiHi42TVpIBVvqdJLrsRow_YKL-4FD1gHMM8la8EGAh3bTXkQBj_vpsl7cvp40eXKHPn-826QAK_p3jKt8IzzYkNdQcXLSXgE2fMfi067Z0JLtDHXACbf3AUHBrha4KhM8YATXw=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyJQP9HRqUKCCzxQxLjGapJaQWc3wyetoxwhHiwpPRdSq5I3qsKyOEaNOcJ7PBb9a39T6NgKk9_yBRQLJ7R3TirnJd0yN3mP6BOhyev0J-VCHZN_V7RAYmIShunV5HP_5agbB3y=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSypd5q3HqD2XNHl3KKJFvNGT3LHq8FVXucYg_KE5aBRWO3GiVBm9EhinBO28PixpC4ev6wmY4-062w-NLDVU2JP538CRPLTnaQvbpaI2tMP2g_SZNlbJThaaze8nSvSbNz5X0NZZ8LZ8VAV=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxEmnJ7qwxptqE3WP_LgeXwA7L0tgg12jtnOm0-jxRbBgoVOS4eq7NWirV6aJQc9NLYZQhZfgBTR-RpN6m05GMW_yJEVteTe3iBw8j6WXKr9d2JyHuVMS6XUCcNssAr8_7NScmG-pYykSVo=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipOQ89VfXrNF5sKYyKG-uV9jkNYXMCyOLFlgdb2W=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzY3q07xOuHLsg0U5_oxxwmgjbFkTfdZP8RwXMlhaAPYZGIXm3BUpG2knmFmXXMzdAz7gXZ7LXhlnieqw2eBq1KE5pu_5YFpDmdLGb7CW6-vSNJIQBdgQrfTq3bMr3fKnT7v274=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Premium matcha experience",
+      "Beautiful artisan presentation",
+      "Perfect for matcha enthusiasts"
+    ],
+    "vibeScore": 91,
+    "lighting": "Bright",
+    "powerOutlets": "Some",
+    "seating": "Modern seating",
+    "music": "Soft ambient"
+  },
+  {
+    "name": "Matcha Times",
+    "slug": "matcha-times",
+    "area": "Sala Kamreuk",
+    "addressShort": "Sala Kamreuk",
+    "googleMapsUrl": "https://maps.google.com/?q=Matcha+Times+Sala+Kamreuk+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3645,
+      "lng": 103.8520
+    },
+    "minPriceUsd": 2.5,
+    "topDrink": {
+      "name": "Matcha Frappe",
+      "description": "Refreshing blended matcha with creamy finish"
+    },
+    "wifi": {
+      "downloadMbps": 45,
+      "uploadMbps": 15,
+      "latencyMs": 20,
+      "testedAt": "2025-01-15"
+    },
+    "hours": {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    "tags": ["Aesthetic", "Matcha Specialty", "Aircon", "Cozy"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/p/AF1QipNR9CkuSSBS6_RExAc_rJ-yFx6Nb4HkQji6QWL0=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwvocN3VzSKSaPxUNn6G8mubWYv8CSph90ThVd_XjSGuzhmaxQAvupmepKgan8cqyLqwLQKwwHLXp1CsqokNm-YUC1zkn2dvF8Q_PUeQxCI1VWs742oFEJy_T1u-uPN00MBWrawrAuYsHm-=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyM6ACfzIT-x4yWbUw6J1TO8WmkvEcwR4aqK51ZPA8L9glAkHSb79B92YykpKtN5ejAZ9E_VJrh_mshObDB4kk34VerY8z9o8qjqbvm43zrPUUw9AI3Xtn1O8axXV8qp-1nppeCOU0yO_A=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/p/AF1QipPxL72gtlszc8kCG9-1RncMmrRMilkszoMpDNRe=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzfWoeKkY5vvppVTFEbQOJxxn2vHuJIq17GopIe-QDDkb3N9m7JhCrMOFKa_lNdNsQriW5nEwxjIn9uGkebNSCQjFgvB2C3f3TH0cGJzA8Lfs6_409SQO2h9w9RFjzU7ohtDWs=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyWzhClnh6IcwEUqygIpiF1ewDXq2qoqrnzYzJzdZajNamWjLipnyZH-7SEJqIit4u0r7bHTgPXPJYnI66kKDr59kMIfEy9jUPyKCllBN3qkTYdmnQCBqLI7wXBlqa-c3hsALQ=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Cozy matcha-focused cafe",
+      "Great for afternoon relaxation",
+      "Friendly staff and service"
+    ],
+    "vibeScore": 87,
+    "lighting": "Warm",
+    "powerOutlets": "Some",
+    "seating": "Comfortable indoor seating",
+    "music": "Chill"
+  },
+  {
+    "name": "SAKU Coffee & Eatery",
+    "slug": "saku-coffee-eatery",
+    "area": "Siem Reap",
+    "addressShort": "Siem Reap City",
+    "googleMapsUrl": "https://maps.google.com/?q=SAKU+Coffee+Eatery+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3575,
+      "lng": 103.8542
+    },
+    "minPriceUsd": 2.5,
+    "topDrink": {
+      "name": "Specialty Latte",
+      "description": "Perfectly crafted latte with house-roasted beans"
+    },
+    "wifi": {
+      "downloadMbps": 52,
+      "uploadMbps": 18,
+      "latencyMs": 16,
+      "testedAt": "2025-01-16"
+    },
+    "hours": {
+      "open": "07:00",
+      "close": "21:00"
+    },
+    "tags": ["Work-friendly", "Aesthetic", "Aircon", "Power outlets"],
+    "gallery": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxHfKy4B5akDepDRgcF1xOyT212X0PAnOkqPRRk0pHQdyZFG3Rud3hP9p-A9Ql1HfxcxkB-OUoPY1weY0EoCNP3ccsyztxo5VxYGs9tt-X_NRE8PXQW6_8gKW2Wshankf4LcjU0U2CT-Wc=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGnoqdnZqcWWKpAexzs4RAxTUOIxPutfPaMkPmT-f8L9aCG5uDZ4H3qo6rMOJCewG0SSdGdw9xFypBPlmCJM6TX0D-_oDCvZ9LPAtLO_in8GHSpkaPTTnFpJo-JQB11POe25wKw6KOJTc=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy4lJ5jgAs52FORUsC1f0fVtnHEiGOQpVUPdmnj58GOHmU8Hkiulp15QmckrGheYfvdBPuX7AoxovRSEl6QlhGeIKnhPaLvWVrdg0VuvnBRwuGXJOuDqMnBIos7U9bcgXau0YySFgFfgNM=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxd39I71OJ1tScz47BI4bF_WNZkMolWTL9UIc3PN_ftwqQZ92VPbwGtV7L4Ry7y50EFMIJIgQbpQV0M-suNLoCD8FJoXPUYmNy3WDAmjVMK47wELRJyeP_yLnK_zdpiAfaQ9MY-Knz6t8U=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzuoQDQM6VJz05pZhOetJRoKvfg0zxaJR2EobnJEdet6_BdaRfi1PeTGG2asgeDiSbbKp2JUQtsJFvt93rDCdUubeF5cNOeTG5wbOH9uvRra4PsEb1qjmq2GOPrMLGRPHWgqsmnOsecA2U=s680-w680-h510-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyGfx03Z_IGRGKdxt5JRUE91uxnK_QZevMWB0JnDr-cnGsE0HDVhowJVutkgNWHslP_mjyqDX7Xd1yBSPIgbmE9xjUOeUSCCKfubhq6tw_4DCPplq4pgSjMBUC3JHFY7luYHE7EQyETmr5K=s680-w680-h510-rw"
+    ],
+    "notes": [
+      "Japanese-inspired cafe design",
+      "Great for work and meetings",
+      "Excellent food menu alongside coffee"
+    ],
+    "vibeScore": 89,
+    "lighting": "Bright",
+    "powerOutlets": "Many",
+    "seating": "Modern tables + bar seating",
+    "music": "Lo-fi"
   }
 ]
