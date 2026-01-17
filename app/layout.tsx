@@ -73,21 +73,12 @@ export const metadata: Metadata = {
     title: 'Siem Reap Cafes - Find Your Perfect Work & Chill Spot',
     description:
       'Discover the best cafes in Siem Reap with tested Wi-Fi speeds, minimum prices, and vibe ratings. The ultimate guide for digital nomads in Cambodia.',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Siem Reap Cafes - Find cafes with fast Wi-Fi in Cambodia',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Siem Reap Cafes - Find Your Perfect Work & Chill Spot',
     description:
       'Find the best cafes in Siem Reap with tested Wi-Fi speeds and honest reviews.',
-    images: ['/og-image.png'],
     creator: '@siemreapcafes',
   },
   robots: {
