@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Little Red Fox Espresso",
+    "slug": "little-red-fox-espresso",
+    "area": "Wat Bo",
+    "addressShort": "Wat Bo Road",
+    "googleMapsUrl": "https://maps.google.com/?q=Little+Red+Fox+Espresso+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3633,
+      "lng": 103.8622
+    },
+    "minPriceUsd": 2.0,
+    "topDrink": {
+      "name": "Iced Latte",
+      "description": "Smooth espresso with creamy milk, perfect for hot days"
+    },
+    "wifi": {
+      "downloadMbps": 65,
+      "uploadMbps": 20,
+      "latencyMs": 15,
+      "testedAt": "2025-01-10"
+    },
+    "hours": {
+      "open": "07:00",
+      "close": "21:00"
+    },
+    "tags": ["Work-friendly", "Aircon", "Aesthetic", "Power outlets"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop"
+    ],
+    "notes": [
+      "Best time to work: 8-11am",
+      "Gets busy after lunch",
+      "Strong aircon, bring a jacket"
+    ],
+    "vibeScore": 85,
+    "lighting": "Bright",
+    "powerOutlets": "Many",
+    "seating": "Wood chairs + sofas",
+    "music": "Lo-fi"
+  },
+  {
+    "name": "Sister Srey Cafe",
+    "slug": "sister-srey-cafe",
+    "area": "Old Market",
+    "addressShort": "Near Old Market",
+    "googleMapsUrl": "https://maps.google.com/?q=Sister+Srey+Cafe+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3527,
+      "lng": 103.8560
+    },
+    "minPriceUsd": 1.5,
+    "topDrink": {
+      "name": "Vietnamese Coffee",
+      "description": "Rich, bold, and sweetened with condensed milk"
+    },
+    "wifi": {
+      "downloadMbps": 35,
+      "uploadMbps": 12,
+      "latencyMs": 25,
+      "testedAt": "2025-01-08"
+    },
+    "hours": {
+      "open": "07:30",
+      "close": "18:00"
+    },
+    "tags": ["Cozy", "Quiet", "Aesthetic"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&h=600&fit=crop"
+    ],
+    "notes": [
+      "Social enterprise supporting local women",
+      "Quiet atmosphere, great for reading",
+      "Beautiful garden seating"
+    ],
+    "vibeScore": 90,
+    "lighting": "Warm",
+    "powerOutlets": "Some",
+    "seating": "Cushioned",
+    "music": "Chill"
+  },
+  {
+    "name": "The Local Coffee",
+    "slug": "the-local-coffee",
+    "area": "Sok San Road",
+    "addressShort": "Sok San Road",
+    "googleMapsUrl": "https://maps.google.com/?q=The+Local+Coffee+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3590,
+      "lng": 103.8510
+    },
+    "minPriceUsd": 1.25,
+    "topDrink": {
+      "name": "Iced Americano",
+      "description": "Classic and refreshing, locally roasted beans"
+    },
+    "wifi": {
+      "downloadMbps": 95,
+      "uploadMbps": 30,
+      "latencyMs": 10,
+      "testedAt": "2025-01-12"
+    },
+    "hours": {
+      "open": "06:30",
+      "close": "22:00"
+    },
+    "tags": ["Work-friendly", "Aircon", "Power outlets", "Quiet"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&h=600&fit=crop"
+    ],
+    "notes": [
+      "Insanely fast Wi-Fi",
+      "Digital nomad favorite",
+      "Can get crowded in afternoons"
+    ],
+    "vibeScore": 78,
+    "lighting": "Bright",
+    "powerOutlets": "Many",
+    "seating": "Wood chairs",
+    "music": "Lo-fi"
+  },
+  {
+    "name": "Crane Cafe",
+    "slug": "crane-cafe",
+    "area": "Taphul",
+    "addressShort": "Taphul Village",
+    "googleMapsUrl": "https://maps.google.com/?q=Crane+Cafe+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3480,
+      "lng": 103.8545
+    },
+    "minPriceUsd": 2.5,
+    "topDrink": {
+      "name": "Matcha Latte",
+      "description": "Ceremonial grade matcha with oat milk"
+    },
+    "wifi": {
+      "downloadMbps": 45,
+      "uploadMbps": 15,
+      "latencyMs": 20,
+      "testedAt": "2025-01-05"
+    },
+    "hours": {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    "tags": ["Aesthetic", "Cozy", "Outdoor"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&h=600&fit=crop"
+    ],
+    "notes": [
+      "Stunning interior design",
+      "Best for content photos",
+      "Limited power outlets"
+    ],
+    "vibeScore": 95,
+    "lighting": "Moody",
+    "powerOutlets": "Rare",
+    "seating": "Sofas + cushions",
+    "music": "Chill"
+  },
+  {
+    "name": "Footprint Cafes",
+    "slug": "footprint-cafes",
+    "area": "Wat Bo",
+    "addressShort": "Wat Bo Area",
+    "googleMapsUrl": "https://maps.google.com/?q=Footprint+Cafes+Siem+Reap",
+    "coordinates": {
+      "lat": 13.3610,
+      "lng": 103.8640
+    },
+    "minPriceUsd": 1.75,
+    "topDrink": {
+      "name": "Cold Brew",
+      "description": "24-hour steeped, smooth and chocolatey"
+    },
+    "wifi": {
+      "downloadMbps": 8,
+      "uploadMbps": 3,
+      "latencyMs": 45,
+      "testedAt": "2025-01-03"
+    },
+    "hours": {
+      "open": "07:00",
+      "close": "19:00"
+    },
+    "tags": ["Cozy", "Quiet", "Outdoor"],
+    "gallery": [
+      "https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop"
+    ],
+    "notes": [
+      "Wi-Fi is slow but vibe is immaculate",
+      "Great for casual hangouts",
+      "Lovely outdoor garden"
+    ],
+    "vibeScore": 82,
+    "lighting": "Warm",
+    "powerOutlets": "Some",
+    "seating": "Mixed seating",
+    "music": "Pop"
+  }
+]
