@@ -17,56 +17,57 @@ interface CafeGridProps {
 
 export function CafeGrid({ cafes }: CafeGridProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [sortBy, setSortBy] = useState<SortOption>('fastest-wifi');
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<SortOption>('all');
   const [viewMode, setViewMode] = useState<ViewMode>('grid');
 
   const allTags = useMemo(() => getUniqueTags(), []);
 
   const filteredAndSortedCafes = useMemo(() => {
+    const selectedTags = selectedTag ? [selectedTag] : [];
     const filtered = filterCafes(cafes, searchQuery, selectedTags);
     return sortCafes(filtered, sortBy);
-  }, [cafes, searchQuery, selectedTags, sortBy]);
-
-  const handleTagToggle = (tag: string) => {
-    setSelectedTags((prev) =>
-      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-    );
-  };
+  }, [cafes, searchQuery, selectedTag, sortBy]);
 
   const handleClearFilters = () => {
     setSearchQuery('');
-    setSelectedTags([]);
+    setSelectedTag(null);
   };
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col sm:flex-row gap-3">
-        <SearchInput
-          value={searchQuery}
-          onChange={setSearchQuery}
-          className="flex-1"
-        />
-        <div className="flex gap-2">
-          <FilterSelect
-            tags={allTags}
-            selectedTags={selectedTags}
-            onTagToggle={handleTagToggle}
+      {/* Search and Filters */}
+      <div className="space-y-3 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row gap-3 lg:gap-2">
+          <SearchInput
+            value={searchQuery}
+            onChange={setSearchQuery}
+            className="w-full lg:flex-1"
           />
-          <SortDropdown
-            value={sortBy}
-            onChange={setSortBy}
-          />
+          <div className="flex gap-2 lg:w-auto lg:flex-shrink-0">
+            <FilterSelect
+              tags={allTags}
+              selectedTag={selectedTag}
+              onTagChange={setSelectedTag}
+              className="flex-1 lg:w-40"
+            />
+            <SortDropdown
+              value={sortBy}
+              onChange={setSortBy}
+              className="flex-1 lg:w-40"
+            />
+          </div>
         </div>
       </div>
 
+      {/* Results Count and View Toggle */}
       <div className="flex items-center justify-between">
         <p className="text-sm text-gray-500 dark:text-gray-400">
           {filteredAndSortedCafes.length} result{filteredAndSortedCafes.length !== 1 ? 's' : ''}
         </p>
 
         <div className="flex items-center gap-2">
-          {(selectedTags.length > 0 || searchQuery) && (
+          {(selectedTag || searchQuery) && (
             <button
               onClick={handleClearFilters}
               className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 mr-2"

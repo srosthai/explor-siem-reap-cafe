@@ -53,12 +53,14 @@ export function sortCafes(cafes: Cafe[], sortBy: SortOption): Cafe[] {
   const sorted = [...cafes];
 
   switch (sortBy) {
+    case 'all':
+      return sorted;
+    case 'trending':
+      return sorted.filter((cafe) => cafe.trending === true);
     case 'fastest-wifi':
       return sorted.sort((a, b) => b.wifi.downloadMbps - a.wifi.downloadMbps);
     case 'cheapest':
       return sorted.sort((a, b) => a.minPriceUsd - b.minPriceUsd);
-    case 'most-aesthetic':
-      return sorted.sort((a, b) => (b.vibeScore ?? 0) - (a.vibeScore ?? 0));
     default:
       return sorted;
   }

@@ -31,13 +31,14 @@ export interface Cafe {
   gallery: string[];
   notes: string[];
   vibeScore?: number;
+  trending?: boolean;
   lighting?: 'Warm' | 'Bright' | 'Moody';
   powerOutlets?: 'Many' | 'Some' | 'Rare';
   seating?: string;
   music?: 'Lo-fi' | 'Pop' | 'Chill' | 'None';
 }
 
-export type SortOption = 'fastest-wifi' | 'cheapest' | 'most-aesthetic';
+export type SortOption = 'all' | 'trending' | 'fastest-wifi' | 'cheapest';
 
 export type FilterTag =
   | 'Work-friendly'
@@ -46,4 +47,8 @@ export type FilterTag =
   | 'Aesthetic'
   | 'Power outlets'
   | 'Cozy'
-  | 'Outdoor';
+  | 'Outdoor'
+  | 'Social Enterprise'
+  | 'Matcha Specialty'
+  | 'Affordable'
+  | 'Chain';

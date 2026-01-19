@@ -3,6 +3,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { GalleryGrid } from '@/components/GalleryGrid';
 import { ShareButton } from '@/components/ShareButton';
+import { BackButton } from '@/components/BackButton';
 import { getCafeBySlug, getAllSlugs, formatTime, getOpenStatus } from '@/lib/cafes';
 
 interface PageProps {
@@ -93,6 +94,11 @@ export default async function CafeDetailPage({ params }: PageProps) {
         />
         {/* Gradient overlay - stronger at bottom for text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/20" />
+
+        {/* Back Button */}
+        <div className="absolute top-20 left-4 sm:left-6 lg:left-8 z-10">
+          <BackButton />
+        </div>
 
         {/* Hero Content */}
         <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 lg:p-12">

@@ -22,18 +22,31 @@ L.Marker.prototype.options.icon = defaultIcon;
 
 interface MapContentProps {
   cafes: Cafe[];
+  isFullScreen?: boolean;
 }
 
-export function MapContent({ cafes }: MapContentProps) {
+export function MapContent({ cafes, isFullScreen = false }: MapContentProps) {
   // Center on Siem Reap
   const center: [number, number] = [13.3561, 103.8570];
 
+  const mapHeightClass = isFullScreen
+    ? 'h-screen w-screen'
+    : 'h-[350px] sm:h-[450px] lg:h-[500px]';
+
+  const containerClass = isFullScreen
+    ? ''
+    : 'bg-white dark:bg-gray-900 rounded-2xl shadow-sm overflow-hidden';
+
+  const mapClass = isFullScreen
+    ? mapHeightClass
+    : `rounded-2xl ${mapHeightClass} w-full`;
+
   return (
-    <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
+    <div className={containerClass}>
       <MapContainer
         center={center}
         zoom={14}
-        className="rounded-2xl h-[350px] sm:h-[450px] lg:h-[500px] w-full"
+        className={mapClass}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

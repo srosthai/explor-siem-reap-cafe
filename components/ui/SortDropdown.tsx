@@ -10,9 +10,10 @@ interface SortDropdownProps {
 }
 
 const sortOptions: { value: SortOption; label: string }[] = [
+  { value: 'all', label: 'All' },
+  { value: 'trending', label: 'Trending' },
   { value: 'fastest-wifi', label: 'Fastest Wi-Fi' },
   { value: 'cheapest', label: 'Lowest price' },
-  { value: 'most-aesthetic', label: 'Top rated' },
 ];
 
 export function SortDropdown({
@@ -43,12 +44,14 @@ export function SortDropdown({
     <div ref={dropdownRef} className={`relative ${className}`}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
+        className="w-full flex items-center justify-between gap-2 px-3 py-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600 transition-colors"
       >
-        <span className="text-gray-500 dark:text-gray-400">Sort:</span>
-        <span>{selectedOption?.label}</span>
+        <div className="flex items-center gap-2">
+          <span className="text-gray-500 dark:text-gray-400">Sort:</span>
+          <span>{selectedOption?.label}</span>
+        </div>
         <svg
-          className={`h-4 w-4 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`h-4 w-4 text-gray-400 transition-transform flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -63,7 +66,7 @@ export function SortDropdown({
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-1 w-44 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-50 overflow-hidden">
+        <div className="absolute right-0 mt-1 w-44 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-[1100] overflow-hidden">
           {sortOptions.map((option) => (
             <button
               key={option.value}

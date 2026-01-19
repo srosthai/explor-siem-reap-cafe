@@ -24,7 +24,12 @@
       "open": "07:00",
       "close": "21:00"
     },
-    "tags": ["Work-friendly", "Aircon", "Aesthetic", "Power outlets"],
+    "tags": [
+      "Work-friendly",
+      "Aircon",
+      "Aesthetic",
+      "Power outlets"
+    ],
     "gallery": [
       "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&h=600&fit=crop",
@@ -36,6 +41,7 @@
       "Strong aircon, bring a jacket"
     ],
     "vibeScore": 85,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Many",
     "seating": "Wood chairs + sofas",
@@ -66,7 +72,11 @@
       "open": "07:30",
       "close": "18:00"
     },
-    "tags": ["Cozy", "Quiet", "Aesthetic"],
+    "tags": [
+      "Cozy",
+      "Quiet",
+      "Aesthetic"
+    ],
     "gallery": [
       "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&h=600&fit=crop",
@@ -78,6 +88,7 @@
       "Beautiful garden seating"
     ],
     "vibeScore": 90,
+    "trending": false,
     "lighting": "Warm",
     "powerOutlets": "Some",
     "seating": "Cushioned",
@@ -108,7 +119,12 @@
       "open": "06:30",
       "close": "22:00"
     },
-    "tags": ["Work-friendly", "Aircon", "Power outlets", "Quiet"],
+    "tags": [
+      "Work-friendly",
+      "Aircon",
+      "Power outlets",
+      "Quiet"
+    ],
     "gallery": [
       "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&h=600&fit=crop",
@@ -120,6 +136,7 @@
       "Can get crowded in afternoons"
     ],
     "vibeScore": 78,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Many",
     "seating": "Wood chairs",
@@ -150,7 +167,11 @@
       "open": "08:00",
       "close": "20:00"
     },
-    "tags": ["Aesthetic", "Cozy", "Outdoor"],
+    "tags": [
+      "Aesthetic",
+      "Cozy",
+      "Outdoor"
+    ],
     "gallery": [
       "https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&h=600&fit=crop",
@@ -162,6 +183,7 @@
       "Limited power outlets"
     ],
     "vibeScore": 95,
+    "trending": false,
     "lighting": "Moody",
     "powerOutlets": "Rare",
     "seating": "Sofas + cushions",
@@ -192,7 +214,11 @@
       "open": "07:00",
       "close": "19:00"
     },
-    "tags": ["Cozy", "Quiet", "Outdoor"],
+    "tags": [
+      "Cozy",
+      "Quiet",
+      "Outdoor"
+    ],
     "gallery": [
       "https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&h=600&fit=crop",
@@ -204,6 +230,7 @@
       "Lovely outdoor garden"
     ],
     "vibeScore": 82,
+    "trending": false,
     "lighting": "Warm",
     "powerOutlets": "Some",
     "seating": "Mixed seating",
@@ -234,7 +261,12 @@
       "open": "07:00",
       "close": "21:00"
     },
-    "tags": ["Work-friendly", "Aircon", "Aesthetic", "Power outlets"],
+    "tags": [
+      "Work-friendly",
+      "Aircon",
+      "Aesthetic",
+      "Power outlets"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzIG2RMfdVMrYpGvKR34Skz3xqYb1IQJ67K3FBxRDejrQ6J_uQgvtWnATnlolx0vogpLbswbFxn-cvOagqRdglFehQtbNh_07eYpECF_1HTU9l9Qw-xlfGJqd8F_54GmQAeVnaNQTwJNxq9=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGiS1FsxkuKrvQ5yHNxD16sDY3whNfB8NgxY0pndWBveriw7_HPpd27GlMUU5oSS2_65Sg7oWXnc4xl46KOWM-Y_cNoYihhdDhpn3p5m0RTvEoBwnOBnyZPzqH6gNFWfUpG1sc5W6__Tok=s680-w680-h510-rw",
@@ -248,6 +280,7 @@
       "Excellent coffee quality"
     ],
     "vibeScore": 88,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Many",
     "seating": "Wood tables + bar seating",
@@ -278,7 +311,12 @@
       "open": "07:30",
       "close": "20:00"
     },
-    "tags": ["Cozy", "Aesthetic", "Quiet", "Outdoor"],
+    "tags": [
+      "Cozy",
+      "Aesthetic",
+      "Quiet",
+      "Outdoor"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyXJYTpLWh7nKECazTMusyGf1N0mHSAIrd49jL384Y4c_FfNCFqHZGN3ve9fMOcU0gTh0-G8KQJx8pgU0pNIHAcMs6MfS0NhMerVMf5SN6XEAbBc8_QDerwjVYcUdeeFRoFqk0G=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyf5rwP5ptFURbRfsHrLBbxI-LZAp3KYUHJGeJmROl5UWszA6SHuFqz4iiMyP056j2epEZfMD83_g1qx21t4QcfUyaEYxSZQOav8C54nCl4Yb9cyp-_hIxHlEMg0sUeKNQ-Y3rZ=s680-w680-h510-rw",
@@ -293,6 +331,7 @@
       "Great brunch menu"
     ],
     "vibeScore": 92,
+    "trending": false,
     "lighting": "Warm",
     "powerOutlets": "Some",
     "seating": "Rattan chairs + garden seating",
@@ -323,7 +362,12 @@
       "open": "07:00",
       "close": "17:00"
     },
-    "tags": ["Cozy", "Quiet", "Outdoor", "Social Enterprise"],
+    "tags": [
+      "Cozy",
+      "Quiet",
+      "Outdoor",
+      "Social Enterprise"
+    ],
     "gallery": [
       "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=800&h=600&fit=crop",
@@ -335,6 +379,7 @@
       "Support a great cause while you eat"
     ],
     "vibeScore": 86,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Some",
     "seating": "Indoor + outdoor tables",
@@ -366,7 +411,12 @@
       "open": "08:00",
       "close": "18:00"
     },
-    "tags": ["Aesthetic", "Quiet", "Aircon", "Matcha Specialty"],
+    "tags": [
+      "Aesthetic",
+      "Quiet",
+      "Aircon",
+      "Matcha Specialty"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwEO0JxArPGMt5OZ5CqaGR5n3VU-jcqLpfpKNai5seFyyDb5qIaGxHUS4lmHV4rj3SHqXnkCI2K43bCBWzMHHSzUn9-4FkfB6flRq2aUpPWwP75-5jxxt9AbaJGljIsPECBudxagLmYJZNB=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/p/AF1QipNu--mPw9qcHWwPbwC60YMZhIM1i0TduQamO2Ou=s680-w680-h510-rw",
@@ -380,6 +430,7 @@
       "Great for Instagram photos"
     ],
     "vibeScore": 90,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Some",
     "seating": "Minimalist wood seating",
@@ -410,7 +461,12 @@
       "open": "08:00",
       "close": "19:00"
     },
-    "tags": ["Aesthetic", "Matcha Specialty", "Aircon", "Quiet"],
+    "tags": [
+      "Aesthetic",
+      "Matcha Specialty",
+      "Aircon",
+      "Quiet"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0XQU28x-IjqAekkUyjYJCguoJVW-OT2QR7wYv_fJLieymUXyN2vLFHRKCmHH26UMvFakxdMuMzf1osDCfi6D-XAiC8ZctFQjqUhgWVF2qTrtx5yy8G83Sp0WMLfGTZ0lrNxbm=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/p/AF1QipMJKaSy1hdIChlJJsq44e2b6mUTd9uOeJnZLP91=s680-w680-h510-rw",
@@ -427,6 +483,7 @@
       "Perfect for matcha enthusiasts"
     ],
     "vibeScore": 91,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Some",
     "seating": "Modern seating",
@@ -457,7 +514,12 @@
       "open": "08:00",
       "close": "20:00"
     },
-    "tags": ["Aesthetic", "Matcha Specialty", "Aircon", "Cozy"],
+    "tags": [
+      "Aesthetic",
+      "Matcha Specialty",
+      "Aircon",
+      "Cozy"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/p/AF1QipNR9CkuSSBS6_RExAc_rJ-yFx6Nb4HkQji6QWL0=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwvocN3VzSKSaPxUNn6G8mubWYv8CSph90ThVd_XjSGuzhmaxQAvupmepKgan8cqyLqwLQKwwHLXp1CsqokNm-YUC1zkn2dvF8Q_PUeQxCI1VWs742oFEJy_T1u-uPN00MBWrawrAuYsHm-=s680-w680-h510-rw",
@@ -472,6 +534,7 @@
       "Friendly staff and service"
     ],
     "vibeScore": 87,
+    "trending": false,
     "lighting": "Warm",
     "powerOutlets": "Some",
     "seating": "Comfortable indoor seating",
@@ -502,7 +565,12 @@
       "open": "07:00",
       "close": "21:00"
     },
-    "tags": ["Work-friendly", "Aesthetic", "Aircon", "Power outlets"],
+    "tags": [
+      "Work-friendly",
+      "Aesthetic",
+      "Aircon",
+      "Power outlets"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxHfKy4B5akDepDRgcF1xOyT212X0PAnOkqPRRk0pHQdyZFG3Rud3hP9p-A9Ql1HfxcxkB-OUoPY1weY0EoCNP3ccsyztxo5VxYGs9tt-X_NRE8PXQW6_8gKW2Wshankf4LcjU0U2CT-Wc=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzGnoqdnZqcWWKpAexzs4RAxTUOIxPutfPaMkPmT-f8L9aCG5uDZ4H3qo6rMOJCewG0SSdGdw9xFypBPlmCJM6TX0D-_oDCvZ9LPAtLO_in8GHSpkaPTTnFpJo-JQB11POe25wKw6KOJTc=s680-w680-h510-rw",
@@ -517,6 +585,7 @@
       "Excellent food menu alongside coffee"
     ],
     "vibeScore": 89,
+    "trending": true,
     "lighting": "Bright",
     "powerOutlets": "Many",
     "seating": "Modern tables + bar seating",
@@ -547,7 +616,12 @@
       "open": "06:30",
       "close": "22:00"
     },
-    "tags": ["Work-friendly", "Aircon", "Affordable", "Chain"],
+    "tags": [
+      "Work-friendly",
+      "Aircon",
+      "Affordable",
+      "Chain"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwSgZg8AONSbHcapd_zk47qx9jI9tUWmW5RHxkUb3muRONgxAdptoOH8fs2Z2vDCM95setXk5psQHzcc66uMAyszz51N7t4THS8GQ4TL9nWkV1KAlDZkKfZUWiNWHAl4IRJTag=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwLIMu2MaBBj71ubrJBNjxOPO_fzCoo3Mz-pbeihfkL0cLFvgNui-3grFNmpqOG431rYLERImgj4tCYmuXO97R1n2CsD3nOFHSIM-NwRbAZFfmxjWhmYQCWmBSwFzJJ_x4y2Cmr=s680-w680-h510-rw",
@@ -560,6 +634,7 @@
       "London Underground inspired design"
     ],
     "vibeScore": 75,
+    "trending": false,
     "lighting": "Bright",
     "powerOutlets": "Some",
     "seating": "Modern tables + counter seating",
@@ -590,7 +665,13 @@
       "open": "06:30",
       "close": "22:00"
     },
-    "tags": ["Work-friendly", "Aircon", "Affordable", "Chain", "Outdoor"],
+    "tags": [
+      "Work-friendly",
+      "Aircon",
+      "Affordable",
+      "Chain",
+      "Outdoor"
+    ],
     "gallery": [
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxl6UNtx_KpfISY8MP2KqtK5HgkMKorj7ZtgJf7xcgAmYZucNNDEdDAx5iQuhjDBcUQqlh10uawTntJeKM8T77jygloAiHR51jMFAdk7mJj1wSm-KK-unlnZmvlHakV4JLX1eOrT0XOfqCR=s680-w680-h510-rw",
       "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx32szRa_bzg5ZXiThR_XJcMqygtlzoNHLWAOMbUUmChdatlQZ9qdZKsPdtiVDAuyy6SVatgOMFg837jUkodlq4OOzl1xKYzyYIBATofpdo_bEJASX3h6zWgj1_drSUKcWigfCroqAkECcz=s680-w680-h510-rw",
@@ -605,6 +686,7 @@
       "Popular with tourists and locals"
     ],
     "vibeScore": 78,
+    "trending": true,
     "lighting": "Bright",
     "powerOutlets": "Some",
     "seating": "Indoor + outdoor seating",
