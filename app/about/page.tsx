@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Button } from '@/components/ui/Button';
 
 export const metadata: Metadata = {
   title: 'About Us - How We Test & Review Cafes',
@@ -8,9 +9,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Siem Reap Cafes - Our Testing Process',
     description: 'Discover how we personally visit and test every cafe in Siem Reap for Wi-Fi speed, pricing, and ambiance.',
-  },
-  alternates: {
-    canonical: '/about',
   },
 };
 
@@ -21,8 +19,10 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
       </svg>
     ),
-    title: 'Real Wi-Fi Tests',
-    description: 'Every speed is measured on-site using Speedtest by Ookla during working hours.',
+    title: 'Precision Wi-Fi Benchmarks',
+    description: 'We don\'t guess. Every speed is a real-world measurement taken during peak working hours to ensure reliability.',
+    color: 'text-blue-500',
+    bgColor: 'bg-blue-50/50 dark:bg-blue-900/20',
   },
   {
     icon: (
@@ -30,8 +30,10 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: 'Honest Pricing',
-    description: 'Minimum prices help you budget and find affordable spots for longer work sessions.',
+    title: 'Budget Transparency',
+    description: 'From $1.50 lattes to $5 specialty brews. We track minimum prices so you can find a spot that fits your daily spend.',
+    color: 'text-emerald-500',
+    bgColor: 'bg-emerald-50/50 dark:bg-emerald-900/20',
   },
   {
     icon: (
@@ -40,63 +42,81 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: 'Local First',
-    description: 'We personally visit every cafe. No paid listings, no sponsored rankings.',
+    title: 'Zero Influence Reviews',
+    description: 'We visit incognito. No free coffees, no sponsored rankings. Just the raw, honest truth for the nomad community.',
+    color: 'text-violet-500',
+    bgColor: 'bg-violet-50/50 dark:bg-violet-900/20',
   },
 ];
 
-const tags = [
-  { name: 'Work-friendly', description: 'Good setup for laptop work', color: 'bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400' },
-  { name: 'Aircon', description: 'Air conditioning available', color: 'bg-cyan-50 dark:bg-cyan-950 text-cyan-600 dark:text-cyan-400' },
-  { name: 'Quiet', description: 'Low noise, good for focus', color: 'bg-purple-50 dark:bg-purple-950 text-purple-600 dark:text-purple-400' },
-  { name: 'Aesthetic', description: 'Instagram-worthy interior', color: 'bg-pink-50 dark:bg-pink-950 text-pink-600 dark:text-pink-400' },
-  { name: 'Power outlets', description: 'Plenty of charging spots', color: 'bg-amber-50 dark:bg-amber-950 text-amber-600 dark:text-amber-400' },
-  { name: 'Cozy', description: 'Comfortable, relaxed vibe', color: 'bg-orange-50 dark:bg-orange-950 text-orange-600 dark:text-orange-400' },
-];
-
 const steps = [
-  { number: '01', title: 'Visit', description: 'We go to each cafe during typical working hours' },
-  { number: '02', title: 'Test', description: 'Run multiple speed tests and note the environment' },
-  { number: '03', title: 'Document', description: 'Record prices, amenities, and overall vibe' },
-  { number: '04', title: 'Share', description: 'Publish honest, unbiased information' },
+  {
+    number: '01',
+    title: 'The Visit',
+    description: 'We arrive like any other customer, usually with a laptop and a craving for caffeine.'
+  },
+  {
+    number: '02',
+    title: 'The Benchmark',
+    description: 'Running Speedtest by Ookla at multiple seating locations to find the "hot spots".'
+  },
+  {
+    number: '03',
+    title: 'The Vibe Check',
+    description: 'Noting volume, AC efficiency, seating comfort, and availability of power outlets.'
+  },
+  {
+    number: '04',
+    title: 'The Upload',
+    description: 'Processing the data and photos to keep our directory the most accurate in Siem Reap.'
+  },
 ];
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-20">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center">
-          <span className="inline-block px-3 py-1 text-xs font-medium text-violet-600 dark:text-violet-400 bg-violet-50 dark:bg-violet-950 rounded-full mb-4">
-            About Us
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6 tracking-tight">
-            Finding great cafes,
-            <br />
-            <span className="text-gray-400 dark:text-gray-500">so you don&apos;t have to.</span>
+      <section className="relative pt-24 pb-16 overflow-hidden">
+        {/* Background Gradients */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-full -z-10">
+          <div className="absolute top-[-10%] right-[10%] w-[40%] h-[60%] rounded-full bg-blue-100/50 dark:bg-blue-900/10 blur-[120px]" />
+          <div className="absolute bottom-[10%] left-[5%] w-[35%] h-[50%] rounded-full bg-violet-100/50 dark:bg-violet-900/10 blur-[120px]" />
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm mb-6">
+            <span className="w-2 h-2 rounded-full bg-violet-500 animate-pulse" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400">Our Mission</span>
+          </div>
+
+          <h1 className="text-4xl sm:text-6xl font-extrabold text-gray-900 dark:text-white mb-8 tracking-tight leading-[1.1]">
+            We visit every cafe in
+            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-blue-600 dark:from-violet-400 dark:to-blue-400 mt-2">
+              Siem Reap.
+            </span>
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            We test Wi-Fi, check prices, and rate the vibes at every cafe in Siem Reap.
-            No ads, no sponsored content - just honest recommendations.
+
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            Finding a place to work shouldn&apos;t be a gamble. We provide the data you need to skip the bad Wi-Fi and find your perfect flow.
           </p>
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid sm:grid-cols-3 gap-6">
+      {/* Philosophy / Features Grid */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+        <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="relative p-6 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800"
+              className="group relative p-8 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 mb-4">
+              <div className={`w-14 h-14 flex items-center justify-center rounded-2xl ${feature.bgColor} ${feature.color} mb-6 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3`}>
                 {feature.icon}
               </div>
-              <h3 className="text-base font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+              <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
                 {feature.description}
               </p>
             </div>
@@ -104,100 +124,84 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-            Our Process
+      {/* The Methodology / Process */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            Our Methodology
           </h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            How we gather and verify cafe information
-          </p>
+          <div className="w-12 h-1 bg-violet-500 mx-auto rounded-full" />
         </div>
 
-        <div className="grid sm:grid-cols-4 gap-4">
+        <div className="relative space-y-12">
+          {/* Vertical line connecting steps (hidden on small screens) */}
+          <div className="absolute left-8 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-800 hidden sm:block" />
+
           {steps.map((step, index) => (
-            <div key={step.number} className="relative">
-              <div className="p-5 bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 h-full">
-                <span className="text-3xl font-bold text-gray-100 dark:text-gray-800">
+            <div key={step.number} className="relative flex flex-col sm:flex-row gap-8 items-start">
+              {/* Number circle */}
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 flex items-center justify-center z-10 shadow-sm group-hover:border-violet-500 transition-colors">
+                <span className="text-2xl font-bold text-violet-600 dark:text-violet-400">
                   {step.number}
                 </span>
-                <h3 className="text-base font-semibold text-gray-900 dark:text-white mt-3 mb-1">
+              </div>
+
+              <div className="flex-1 pt-2">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-lg text-gray-500 dark:text-gray-400 leading-relaxed">
                   {step.description}
                 </p>
               </div>
-              {index < steps.length - 1 && (
-                <div className="hidden sm:block absolute top-1/2 -right-2 w-4 h-px bg-gray-200 dark:bg-gray-700" />
-              )}
             </div>
           ))}
         </div>
       </section>
 
-      {/* Tags Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <div className="bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 p-8 sm:p-10">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-              Understanding Tags
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              What each label means when browsing cafes
-            </p>
-          </div>
+      {/* The Team / Transparency */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+        <div className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-white dark:to-blue-50 rounded-[2.5rem] p-8 sm:p-16 text-center text-white dark:text-gray-900 relative overflow-hidden shadow-2xl shadow-blue-500/10">
+          {/* Decorative shapes */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/20 blur-[80px] -mr-32 -mt-32" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/20 blur-[80px] -ml-32 -mb-32" />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {tags.map((tag) => (
-              <div
-                key={tag.name}
-                className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50"
-              >
-                <span className={`px-2.5 py-1 text-xs font-medium rounded-lg ${tag.color}`}>
-                  {tag.name}
-                </span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
-                  {tag.description}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12 pb-20">
-        <div className="relative overflow-hidden rounded-3xl bg-gray-900 dark:bg-white p-8 sm:p-12 text-center">
           <div className="relative z-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white dark:text-gray-900 mb-4">
-              Own a cafe in Siem Reap?
+            <h2 className="text-3xl sm:text-4xl font-black mb-6">
+              Founded in Siem Reap, for the world.
             </h2>
-            <p className="text-gray-400 dark:text-gray-600 mb-8 max-w-md mx-auto">
-              Want to update your listing or add your cafe to our directory?
-              We&apos;d love to hear from you.
+            <p className="text-lg text-gray-300 dark:text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+              We started this directory in 2024 because we were tired of "work-friendly" lists that were just paid ads. We visit, we test, and we share.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button
                 href="/"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                variant="primary"
+                size="lg"
+                className="rounded-full px-8 !bg-white !text-gray-900 dark:!bg-gray-900 dark:!text-white"
               >
-                Explore Cafes
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
+                Explore the Cafes
+              </Button>
+              <Button
+                href="mailto:hello@siemreapcafes.com"
+                variant="secondary"
+                size="lg"
+                className="rounded-full px-8 !bg-transparent !text-white dark:!text-gray-900 !border-white/30 dark:!border-gray-900/30 hover:!bg-white/10 dark:hover:!bg-gray-900/5 transition-all"
+              >
+                Get in Touch
+              </Button>
             </div>
           </div>
-
-          {/* Background decoration */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-violet-500 blur-3xl" />
-            <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-blue-500 blur-3xl" />
-          </div>
         </div>
       </section>
+
+      {/* Final Note */}
+      <div className="text-center mt-12">
+        <p className="text-sm text-gray-400 dark:text-gray-500">
+          Last updated: January 2026 • Built with passion for coffee & code.
+        </p>
+      </div>
     </main>
   );
 }

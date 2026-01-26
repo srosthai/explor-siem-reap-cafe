@@ -1,4 +1,5 @@
 export { TopNav } from './TopNav';
+export { Footer } from './Footer';
 export { CafeCard } from './CafeCard';
 export { CafeGrid } from './CafeGrid';
 export { EmptyState } from './EmptyState';
