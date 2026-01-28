@@ -8,8 +8,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run build` - Create production build
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
-
-No testing framework is currently configured.
+- `npm test` - Run tests in watch mode
+- `npm run test:ci` - Run tests once (for CI)
+- `npm run test:coverage` - Run tests with coverage report
 
 ## Architecture
 
