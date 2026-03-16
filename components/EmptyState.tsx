@@ -11,8 +11,8 @@ export function EmptyState({
 }: EmptyStateProps) {
   return (
     <div className="text-center py-16 px-4">
-      <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-2">{title}</h3>
-      <p className="text-gray-500 dark:text-gray-400 max-w-md mx-auto mb-6">{message}</p>
+      <h3 className="text-lg font-semibold text-stone-700 dark:text-stone-300 mb-2">{title}</h3>
+      <p className="text-sm text-stone-500 dark:text-stone-400 max-w-md mx-auto mb-6">{message}</p>
       {action}
     </div>
   );

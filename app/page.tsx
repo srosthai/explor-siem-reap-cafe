@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { CafeGrid } from '@/components/CafeGrid';
 import { getAllCafes } from '@/lib/cafes';
 
@@ -25,7 +26,7 @@ export default function HomePage() {
     '@type': 'Organization',
     name: 'Siem Reap Cafes',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com'}/icon.svg`,
+    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com'}/images/logo-icon.svg`,
     description: 'Your guide to the best cafes in Siem Reap, Cambodia for digital nomads and coffee lovers.',
     areaServed: {
       '@type': 'City',
@@ -74,14 +75,25 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
       />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-        <header className="text-center mb-10">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Find your next cafe vibe in Siem Reap
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-14">
+        <header className="text-center mb-12">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/logo-full.svg"
+              alt="Siem Reap Cafe Finder"
+              width={260}
+              height={80}
+              className="object-contain"
+              priority
+            />
+          </div>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-stone-900 dark:text-stone-50 mb-4 leading-[1.1]">
+            Find your next
+            <br />
+            cafe vibe
           </h1>
-          <p className="text-base text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Discover the best spots for working, chilling, or grabbing a great
-            coffee. We test the Wi-Fi so you don&apos;t have to.
+          <p className="text-base sm:text-lg text-stone-500 dark:text-stone-400 max-w-lg mx-auto leading-relaxed">
+            We test the Wi-Fi, track the prices, and rate the vibes — so you can just enjoy the coffee.
           </p>
         </header>
 

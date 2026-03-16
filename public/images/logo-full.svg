@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" fill="none">
+  <defs>
+    <linearGradient id="f-pin" x1="42" y1="0" x2="42" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C4A2D"/>
+      <stop offset="100%" stop-color="#5C3318"/>
+    </linearGradient>
+    <linearGradient id="f-cream" x1="42" y1="16" x2="42" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFDF5"/>
+      <stop offset="100%" stop-color="#F5DEB3"/>
+    </linearGradient>
+    <linearGradient id="f-coffee" x1="42" y1="38" x2="42" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5E3C"/>
+      <stop offset="100%" stop-color="#5C3318"/>
+    </linearGradient>
+    <clipPath id="f-cup-clip">
+      <rect x="27" y="27" width="30" height="34" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <!-- ICON SECTION (left) -->
+  <g transform="translate(0, 2)">
+    <!-- Pin shadow -->
+    <ellipse cx="42" cy="90" rx="11" ry="3" fill="#000" opacity="0.08"/>
+
+    <!-- Map pin shape -->
+    <path d="M42 2C25.4 2 12 15.4 12 32c0 21 27 44 28.8 45.6a2.6 2.6 0 003.4 0C46 76 72 53 72 32 72 15.4 58.6 2 42 2z" fill="url(#f-pin)"/>
+    <path d="M42 5.5C27.4 5.5 15.5 17.4 15.5 32c0 18.8 24 39.5 25.3 40.7a1.4 1.4 0 002 0C44 71.5 68.5 50.8 68.5 32c0-14.6-11.9-26.5-26.5-26.5z" fill="#6B4226" opacity="0.5"/>
+
+    <!-- Coffee cup -->
+    <rect x="27.5" y="27.5" width="29" height="33" rx="4.5" fill="#C49A6C" stroke="#8B5E3C" stroke-width="1.2"/>
+
+    <!-- Coffee liquid -->
+    <g clip-path="url(#f-cup-clip)">
+      <rect x="27" y="40" width="30" height="21" fill="url(#f-coffee)"/>
+      <circle cx="35" cy="48" r="2" fill="#A0714A" opacity="0.5"/>
+      <circle cx="44" cy="45" r="1.6" fill="#A0714A" opacity="0.4"/>
+      <circle cx="49" cy="50" r="1.5" fill="#A0714A" opacity="0.35"/>
+      <circle cx="39" cy="53" r="1.8" fill="#A0714A" opacity="0.3"/>
+    </g>
+
+    <!-- Cup rim -->
+    <rect x="27.5" y="27.5" width="29" height="3.5" rx="1.8" fill="#DEB887" opacity="0.6"/>
+
+    <!-- Whipped cream -->
+    <ellipse cx="42" cy="28.5" rx="12" ry="5" fill="url(#f-cream)"/>
+    <ellipse cx="42" cy="27" rx="8.5" ry="4.5" fill="#FFF8E7"/>
+    <ellipse cx="42" cy="24.5" rx="6" ry="4" fill="url(#f-cream)"/>
+    <ellipse cx="42" cy="22" rx="3.8" ry="3.2" fill="#FFFDF5"/>
+    <ellipse cx="42" cy="20" rx="2.5" ry="2.5" fill="#FFF"/>
+
+    <!-- Straw -->
+    <rect x="40.8" y="7" width="2.5" height="16" rx="1.25" fill="#2B8A4B"/>
+    <rect x="40.8" y="7" width="2.5" height="2.5" rx="1.25" fill="#1F6E3A"/>
+
+    <!-- Wi-Fi arcs -->
+    <path d="M16 28c4-4.2 8.5-6.2 12-7.2" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M18.5 32.5c3-3 6.5-4.8 9.5-5.5" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <path d="M21 37c2-2.2 4.3-3.5 7-4" stroke="#FFF" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+    <circle cx="27.5" cy="38.5" r="1.6" fill="#FFF" opacity="0.9"/>
+
+    <!-- Red map pin accent -->
+    <circle cx="64" cy="22" r="4.5" fill="#E53E3E"/>
+    <circle cx="64" cy="22" r="2" fill="#FFF"/>
+    <path d="M64 26.5L61.8 30.5h4.4z" fill="#E53E3E"/>
+  </g>
+
+  <!-- TEXT SECTION (right) -->
+  <g transform="translate(88, 0)">
+    <!-- "Siem" in golden amber -->
+    <text x="0" y="42" font-family="'Trebuchet MS',Arial,sans-serif" font-size="34" font-weight="800" font-style="italic" fill="#D4920B">Siem</text>
+
+    <!-- "Reap" in teal -->
+    <text x="98" y="42" font-family="'Trebuchet MS',Arial,sans-serif" font-size="34" font-weight="800" font-style="italic" fill="#1DA5A5">Reap</text>
+
+    <!-- Brown banner behind "Café Finder" -->
+    <rect x="24" y="50" width="145" height="26" rx="4" fill="#3D2314"/>
+    <rect x="24" y="50" width="145" height="26" rx="4" fill="#4A2D18"/>
+
+    <!-- "Café Finder" text -->
+    <text x="96.5" y="69" font-family="'Trebuchet MS',Arial,sans-serif" font-size="17" font-weight="700" fill="#F5DEB3" text-anchor="middle" letter-spacing="1">Café Finder</text>
+
+    <!-- Subtle map line decoration -->
+    <line x1="0" y1="84" x2="190" y2="84" stroke="#D4920B" stroke-width="0.5" opacity="0.3"/>
+  </g>
+</svg>

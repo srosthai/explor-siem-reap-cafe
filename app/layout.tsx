@@ -1,18 +1,21 @@
 import type { Metadata, Viewport } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Plus_Jakarta_Sans, DM_Serif_Display } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { TopNav } from '@/components/TopNav';
 import { Footer } from '@/components/Footer';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const jakarta = Plus_Jakarta_Sans({
+  variable: '--font-jakarta',
   subsets: ['latin'],
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const dmSerif = DM_Serif_Display({
+  variable: '--font-serif-display',
+  weight: '400',
   subsets: ['latin'],
+  display: 'swap',
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com';
@@ -22,8 +25,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f9fafb' },
-    { media: '(prefers-color-scheme: dark)', color: '#030712' },
+    { media: '(prefers-color-scheme: light)', color: '#fafaf9' },
+    { media: '(prefers-color-scheme: dark)', color: '#0c0a09' },
   ],
 };
 
@@ -59,10 +62,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/images/logo-icon.svg', type: 'image/svg+xml' },
     ],
     apple: [
-      { url: '/apple-icon.svg', type: 'image/svg+xml' },
+      { url: '/images/logo-icon.svg', type: 'image/svg+xml' },
     ],
   },
   manifest: '/manifest.json',
@@ -111,7 +114,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors`}
+        className={`${jakarta.variable} ${dmSerif.variable} antialiased bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 transition-colors`}
         suppressHydrationWarning
       >
         <ThemeProvider>

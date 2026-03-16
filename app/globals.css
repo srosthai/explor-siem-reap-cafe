@@ -3,26 +3,40 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-serif: var(--font-serif-display), Georgia, serif;
 }
 
 /* Base styles */
 body {
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-sans);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Card Hover Effect */
+/* Serif display headings */
+.font-display {
+  font-family: var(--font-serif);
+}
+
+/* Card Hover Effect — refined, subtle lift */
 .card-hover {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .card-hover:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    0 12px 32px -8px rgba(0, 0, 0, 0.08),
+    0 4px 8px -2px rgba(0, 0, 0, 0.04);
+}
+
+.dark .card-hover:hover {
+  box-shadow:
+    0 12px 32px -8px rgba(0, 0, 0, 0.4),
+    0 4px 8px -2px rgba(0, 0, 0, 0.2);
 }
 
 /* Button Press Effect */
@@ -49,8 +63,8 @@ body {
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    transparent 50%,
-    rgba(0, 0, 0, 0.6) 100%
+    transparent 40%,
+    rgba(0, 0, 0, 0.55) 100%
   );
 }
 
@@ -67,9 +81,9 @@ body {
 .skeleton {
   background: linear-gradient(
     90deg,
-    #f0f0f0 25%,
-    #e0e0e0 50%,
-    #f0f0f0 75%
+    #e7e5e4 25%,
+    #d6d3d1 50%,
+    #e7e5e4 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
@@ -78,26 +92,62 @@ body {
 .dark .skeleton {
   background: linear-gradient(
     90deg,
-    #374151 25%,
-    #4b5563 50%,
-    #374151 75%
+    #292524 25%,
+    #44403c 50%,
+    #292524 75%
   );
   background-size: 200% 100%;
 }
 
 /* Lightbox Overlay */
 .lightbox-overlay {
-  background: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
 }
 
-/* Focus States */
+/* Focus States — warm amber ring */
 .focus-ring:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3);
 }
 
 /* Top nav spacing */
 main {
   padding-top: 70px;
+}
+
+/* Staggered card entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Wi-Fi speed indicator bar */
+.wifi-bar {
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Subtle grain texture overlay for depth */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+.dark .grain::before {
+  opacity: 0.03;
 }

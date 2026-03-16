@@ -1,27 +1,21 @@
 {
-  "name": "Siem Reap Cafes",
+  "name": "Siem Reap Cafe Finder",
   "short_name": "SR Cafes",
   "description": "Find the best cafes in Siem Reap with tested Wi-Fi speeds, minimum prices, and vibe ratings.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f9fafb",
-  "theme_color": "#8B5CF6",
+  "background_color": "#fafaf9",
+  "theme_color": "#d97706",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
   "categories": ["travel", "food", "lifestyle"],
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/images/logo-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
-    },
-    {
-      "src": "/apple-icon.svg",
-      "sizes": "180x180",
-      "type": "image/svg+xml",
-      "purpose": "maskable"
     }
   ]
 }

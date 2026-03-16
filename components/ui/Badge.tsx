@@ -31,7 +31,7 @@ export function Badge({
   if (variant === 'area') {
     return (
       <span
-        className={`${baseStyles} bg-purple-100 text-purple-700 ${className}`}
+        className={`${baseStyles} bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 ${className}`}
       >
         {children}
       </span>
@@ -41,7 +41,7 @@ export function Badge({
   if (variant === 'tag') {
     return (
       <span
-        className={`${baseStyles} bg-white/60 text-gray-700 backdrop-blur-sm ${className}`}
+        className={`${baseStyles} bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 ${className}`}
       >
         {children}
       </span>
@@ -49,7 +49,7 @@ export function Badge({
   }
 
   return (
-    <span className={`${baseStyles} bg-gray-100 text-gray-700 ${className}`}>
+    <span className={`${baseStyles} bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 ${className}`}>
       {children}
     </span>
   );
@@ -73,7 +73,7 @@ export function WifiBadge({
     >
       <span>{emoji}</span>
       <span>{speed} Mbps</span>
-      {showLabel && <span className="opacity-75">• {label}</span>}
+      {showLabel && <span className="opacity-75">· {label}</span>}
     </span>
   );
 }
