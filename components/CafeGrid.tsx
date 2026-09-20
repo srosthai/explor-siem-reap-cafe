@@ -115,7 +115,7 @@ export function CafeGrid({ cafes }: CafeGridProps) {
       {/* Results */}
       {filteredAndSortedCafes.length > 0 ? (
         viewMode === 'grid' ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
             {filteredAndSortedCafes.map((cafe, index) => (
               <div
                 key={cafe.slug}

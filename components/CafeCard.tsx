@@ -41,42 +41,37 @@ export function CafeCard({ cafe, priority = false }: CafeCardProps) {
         </div>
 
         {/* Content */}
-        <div className="p-4">
+        <div className="p-3 sm:p-4">
           {/* Title row */}
-          <div className="flex items-start justify-between gap-3 mb-1.5">
-            <h3 className="font-semibold text-ink dark:text-paper leading-snug group-hover:text-palm dark:group-hover:text-palm transition-colors">
+          <div className="flex items-start justify-between gap-2 mb-1.5">
+            <h3 className="text-sm sm:text-base font-semibold text-ink dark:text-paper leading-snug truncate group-hover:text-palm dark:group-hover:text-palm transition-colors">
               {cafe.name}
             </h3>
-            <span className="text-sm font-semibold text-ink dark:text-paper whitespace-nowrap tabular-nums">
+            <span className="text-xs sm:text-sm font-semibold text-ink dark:text-paper whitespace-nowrap tabular-nums">
               ${cafe.minPriceUsd.toFixed(2)}
             </span>
           </div>
 
           {/* Area + status */}
-          <div className="flex items-center gap-2 text-sm text-ink/55 dark:text-paper/55 mb-3">
-            <span>{cafe.area}</span>
-            <span className="text-ink/20 dark:text-paper/20">/</span>
-            <span className={openStatus.isOpen ? 'text-palm dark:text-palm font-medium' : ''}>
-              {openStatus.isOpen ? 'Open now' : openStatus.label}
-            </span>
+          <div className="flex items-center gap-2 text-xs sm:text-sm text-ink/55 dark:text-paper/55 mb-3 truncate">
+            <span className="truncate">{cafe.area}</span>
+            {openStatus.isOpen && (
+              <>
+                <span className="text-ink/20 dark:text-paper/20 hidden sm:inline">/</span>
+                <span className="text-palm dark:text-palm font-medium hidden sm:inline">Open now</span>
+              </>
+            )}
           </div>
 
           {/* Stats row */}
-          <div className="flex items-center gap-3 pt-3 border-t border-ink/8 dark:border-paper/10">
+          <div className="flex items-center gap-2 sm:gap-3 pt-3 border-t border-ink/8 dark:border-paper/10">
             <WifiSignal mbps={cafe.wifi.downloadMbps} className="text-xs" />
 
-            <span className="text-ink/20 dark:text-paper/20">/</span>
-
-            {/* First tag */}
-            <span className="text-xs text-ink/55 dark:text-paper/55 truncate">
+            {/* First tag — hidden on the tight mobile 2-col layout */}
+            <span className="text-ink/20 dark:text-paper/20 hidden sm:inline">/</span>
+            <span className="text-xs text-ink/55 dark:text-paper/55 truncate hidden sm:inline">
               {cafe.tags[0]}
             </span>
-
-            {cafe.tags.length > 1 && (
-              <span className="text-xs text-ink/35 dark:text-paper/35 whitespace-nowrap">
-                +{cafe.tags.length - 1}
-              </span>
-            )}
 
             {/* Arrow */}
             <svg className="w-4 h-4 ml-auto text-ink/25 dark:text-paper/25 group-hover:text-palm group-hover:translate-x-0.5 transition-all flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

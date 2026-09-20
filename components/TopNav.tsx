@@ -56,11 +56,11 @@ export function TopNav() {
         {/* Logo */}
         <Link href="/" className="flex items-center pl-1 pr-0.5">
           <Image
-            src="/images/logo-icon.svg"
+            src="/images/logo.png"
             alt="Siem Reap Cafe Finder"
-            width={30}
-            height={30}
-            className="object-contain"
+            width={48}
+            height={32}
+            className="object-contain h-8 w-auto"
           />
         </Link>
 

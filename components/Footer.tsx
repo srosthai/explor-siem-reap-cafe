@@ -55,11 +55,11 @@ export function Footer() {
           {/* Brand + tagline */}
           <Link href="/" className="flex items-center gap-3 group">
             <Image
-              src="/images/logo-icon.svg"
+              src="/images/logo.png"
               alt="Siem Reap Cafe Finder"
-              width={36}
+              width={54}
               height={36}
-              className="object-contain transition-transform duration-300 group-hover:scale-105"
+              className="object-contain h-9 w-auto transition-transform duration-300 group-hover:scale-105"
             />
             <div>
               <p className="text-sm font-semibold text-ink dark:text-paper">
