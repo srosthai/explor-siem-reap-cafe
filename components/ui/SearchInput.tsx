@@ -33,7 +33,7 @@ export function SearchInput({
     <div className={`relative ${className}`}>
       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
         <svg
-          className="h-4 w-4 text-stone-400 dark:text-stone-500"
+          className="h-4 w-4 text-ink/40 dark:text-paper/40"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -51,7 +51,7 @@ export function SearchInput({
         value={localValue}
         onChange={(e) => setLocalValue(e.target.value)}
         placeholder={placeholder}
-        className="w-full pl-11 pr-10 py-2.5 bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-xl text-sm text-stone-900 dark:text-stone-100 placeholder-stone-400 dark:placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500/50 transition-all"
+        className="w-full pl-11 pr-10 py-2.5 bg-paper dark:bg-ink-soft border border-ink/12 dark:border-paper/15 rounded-xl text-sm text-ink dark:text-paper placeholder-ink/35 dark:placeholder-paper/35 focus:outline-none focus:ring-2 focus:ring-palm/30 focus:border-palm/50 transition-all"
       />
       {localValue && (
         <button
@@ -59,7 +59,7 @@ export function SearchInput({
             setLocalValue('');
             onChange('');
           }}
-          className="absolute inset-y-0 right-0 pr-4 flex items-center text-stone-400 hover:text-stone-600 dark:hover:text-stone-300 transition-colors"
+          className="absolute inset-y-0 right-0 pr-4 flex items-center text-ink/40 hover:text-ink dark:text-paper/40 dark:hover:text-paper transition-colors"
         >
           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path

@@ -49,8 +49,8 @@ export function TopNav() {
       <div
         className={`flex items-center gap-1 px-1.5 py-1.5 rounded-full transition-all duration-300 ${
           isDetailPage && !scrolled
-            ? 'bg-black/30 backdrop-blur-xl border border-white/15 shadow-lg shadow-black/20'
-            : 'bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl border border-stone-200/60 dark:border-stone-700/60 shadow-lg shadow-stone-900/5 dark:shadow-black/20'
+            ? 'bg-ink/35 backdrop-blur-xl border border-paper/15 shadow-lg shadow-ink/20'
+            : 'bg-paper/85 dark:bg-ink-soft/90 backdrop-blur-xl border border-ink/10 dark:border-paper/10 shadow-lg shadow-ink/5 dark:shadow-black/20'
         }`}
       >
         {/* Logo */}
@@ -64,7 +64,7 @@ export function TopNav() {
           />
         </Link>
 
-        <div className="w-px h-5 bg-stone-200/60 dark:bg-stone-700/40" />
+        <div className="w-px h-5 bg-ink/10 dark:bg-paper/15" />
 
         {navLinks.map((link) => {
           const isActive =
@@ -78,10 +78,10 @@ export function TopNav() {
               href={link.href}
               className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
                 isActive
-                  ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900'
+                  ? 'bg-palm text-paper'
                   : isDetailPage && !scrolled
-                    ? 'text-white/80 hover:text-white hover:bg-white/15'
-                    : 'text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-stone-800'
+                    ? 'text-paper/80 hover:text-paper hover:bg-paper/15'
+                    : 'text-ink/55 dark:text-paper/55 hover:text-ink dark:hover:text-paper hover:bg-ink/5 dark:hover:bg-paper/10'
               }`}
             >
               {link.label}
@@ -90,15 +90,15 @@ export function TopNav() {
         })}
 
         <div className={`w-px h-5 ${
-          isDetailPage && !scrolled ? 'bg-white/20' : 'bg-stone-200/60 dark:bg-stone-700/40'
+          isDetailPage && !scrolled ? 'bg-paper/20' : 'bg-ink/10 dark:bg-paper/15'
         }`} />
 
         <button
           onClick={toggleTheme}
           className={`p-2 rounded-full transition-colors ${
             isDetailPage && !scrolled
-              ? 'text-white/80 hover:text-white hover:bg-white/15'
-              : 'text-stone-400 dark:text-stone-500 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800'
+              ? 'text-paper/80 hover:text-paper hover:bg-paper/15'
+              : 'text-ink/45 dark:text-paper/45 hover:text-ink dark:hover:text-paper hover:bg-ink/5 dark:hover:bg-paper/10'
           }`}
           aria-label="Toggle theme"
         >

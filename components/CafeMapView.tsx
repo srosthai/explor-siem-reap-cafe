@@ -33,11 +33,11 @@ export function CafeMapView({ cafes }: CafeMapViewProps) {
 
   if (!MapComponent) {
     return (
-      <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm overflow-hidden relative">
-        <div className={`${loadingHeightClass} flex items-center justify-center bg-gray-50 dark:bg-gray-800`}>
+      <div className="bg-paper dark:bg-ink-soft rounded-xl border border-ink/8 dark:border-paper/10 overflow-hidden relative">
+        <div className={`${loadingHeightClass} flex items-center justify-center bg-paper-soft dark:bg-ink`}>
           <div className="text-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-violet-600 mx-auto mb-3"></div>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Loading map...</p>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-palm mx-auto mb-3"></div>
+            <p className="text-sm text-ink/55 dark:text-paper/55">Loading map...</p>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ export function CafeMapView({ cafes }: CafeMapViewProps) {
         {/* Full-screen button - visible on mobile */}
         <button
           onClick={() => setIsFullScreen(true)}
-          className="absolute bottom-4 right-4 sm:hidden flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors z-[1000]"
+          className="absolute bottom-4 right-4 sm:hidden flex items-center gap-2 px-3 py-2 bg-paper dark:bg-ink-soft rounded-lg shadow-lg border border-ink/12 dark:border-paper/15 text-sm font-medium text-ink/70 dark:text-paper/70 hover:bg-paper-soft dark:hover:bg-ink transition-colors z-[1000]"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
@@ -64,11 +64,11 @@ export function CafeMapView({ cafes }: CafeMapViewProps) {
 
       {/* Full-screen modal overlay */}
       {isFullScreen && (
-        <div className="fixed inset-0 z-[9999] bg-white dark:bg-gray-900">
+        <div className="fixed inset-0 z-[9999] bg-paper dark:bg-ink-soft">
           {/* Close button */}
           <button
             onClick={() => setIsFullScreen(false)}
-            className="absolute top-4 right-4 z-[10000] flex items-center gap-2 px-3 py-2 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+            className="absolute top-4 right-4 z-[10000] flex items-center gap-2 px-3 py-2 bg-paper dark:bg-ink-soft rounded-lg shadow-lg border border-ink/12 dark:border-paper/15 text-sm font-medium text-ink/70 dark:text-paper/70 hover:bg-paper-soft dark:hover:bg-ink transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -77,8 +77,8 @@ export function CafeMapView({ cafes }: CafeMapViewProps) {
           </button>
 
           {/* Cafe count badge */}
-          <div className="absolute top-4 left-4 z-[10000] px-3 py-2 bg-white dark:bg-gray-900 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+          <div className="absolute top-4 left-4 z-[10000] px-3 py-2 bg-paper dark:bg-ink-soft rounded-lg shadow-lg border border-ink/12 dark:border-paper/15">
+            <span className="text-sm font-medium text-ink/70 dark:text-paper/70">
               {cafes.length} cafe{cafes.length !== 1 ? 's' : ''}
             </span>
           </div>

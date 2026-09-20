@@ -49,7 +49,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-auto border-t border-stone-200/60 dark:border-stone-800/60">
+    <footer className="relative mt-auto border-t border-ink/10 dark:border-paper/10">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           {/* Brand + tagline */}
@@ -62,10 +62,10 @@ export function Footer() {
               className="object-contain transition-transform duration-300 group-hover:scale-105"
             />
             <div>
-              <p className="text-sm font-semibold text-stone-900 dark:text-stone-100">
+              <p className="text-sm font-semibold text-ink dark:text-paper">
                 Siem Reap Cafe Finder
               </p>
-              <p className="text-xs text-stone-400 dark:text-stone-500">
+              <p className="text-xs text-ink/45 dark:text-paper/45">
                 Real Wi-Fi speeds. Honest vibes.
               </p>
             </div>
@@ -78,20 +78,20 @@ export function Footer() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors"
+                  className="text-sm text-ink/55 dark:text-paper/55 hover:text-ink dark:hover:text-paper transition-colors"
                 >
                   {item.name}
                 </Link>
               ))}
               <a
                 href="mailto:hello@siemreapcafes.com?subject=Cafe Submission"
-                className="text-sm font-medium text-amber-600 dark:text-amber-500 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+                className="text-sm font-medium text-palm dark:text-palm hover:text-palm-deep dark:hover:text-palm-soft transition-colors"
               >
                 Submit
               </a>
             </nav>
 
-            <div className="w-px h-4 bg-stone-200 dark:bg-stone-800" />
+            <div className="w-px h-4 bg-ink/10 dark:bg-paper/15" />
 
             <div className="flex items-center gap-1">
               {navigation.social.map((item) => (
@@ -100,7 +100,7 @@ export function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                  className="p-2 rounded-lg text-ink/40 dark:text-paper/40 hover:text-ink dark:hover:text-paper hover:bg-ink/5 dark:hover:bg-paper/10 transition-colors"
                   aria-label={item.name}
                 >
                   {item.icon}
@@ -111,8 +111,8 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-8 pt-6 border-t border-stone-100 dark:border-stone-800/60">
-          <p className="text-xs text-center text-stone-400 dark:text-stone-600">
+        <div className="mt-8 pt-6 border-t border-ink/10 dark:border-paper/10">
+          <p className="text-xs text-center text-ink/40 dark:text-paper/35">
             &copy; {currentYear} Siem Reap Cafe Finder. Made in Cambodia.
           </p>
         </div>

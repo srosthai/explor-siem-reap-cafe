@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ const pillars = [
     ),
     title: 'Real Wi-Fi speeds',
     description: 'Every speed is a real-world Ookla test taken during peak hours. No guessing.',
-    accent: 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400',
+    accent: 'bg-palm-soft dark:bg-palm-deep/30 text-palm dark:text-palm',
   },
   {
     icon: (
@@ -31,7 +30,7 @@ const pillars = [
     ),
     title: 'Honest pricing',
     description: 'We track minimum prices so you know what to expect before you walk in.',
-    accent: 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400',
+    accent: 'bg-gold-soft dark:bg-gold/20 text-gold dark:text-gold',
   },
   {
     icon: (
@@ -41,7 +40,7 @@ const pillars = [
     ),
     title: 'Zero influence',
     description: 'No sponsorships, no free coffees. We visit incognito and pay our own bills.',
-    accent: 'bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-400',
+    accent: 'bg-clay-soft dark:bg-clay/20 text-clay dark:text-clay',
   },
 ];
 
@@ -68,21 +67,12 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen pb-16">
       {/* Hero */}
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-20 sm:pt-28 pb-16 text-center">
-        <Image
-          src="/images/logo-icon.svg"
-          alt="Siem Reap Cafe Finder"
-          width={56}
-          height={56}
-          className="mx-auto mb-6"
-        />
-        <h1 className="font-display text-4xl sm:text-5xl text-stone-900 dark:text-stone-50 mb-5 leading-[1.15]">
-          We visit every cafe
-          <br />
-          <span className="text-amber-600 dark:text-amber-500">in Siem Reap.</span>
+      <section className="max-w-2xl mx-auto px-4 sm:px-6 pt-20 sm:pt-28 pb-16">
+        <h1 className="font-display text-4xl sm:text-5xl text-ink dark:text-paper mb-5 leading-[1.15]">
+          We visit every café in Siem Reap ourselves.
         </h1>
-        <p className="text-lg text-stone-500 dark:text-stone-400 max-w-xl mx-auto leading-relaxed">
-          Finding a place to work shouldn&apos;t be a gamble. We test the Wi-Fi, track prices, and rate the vibes — so you don&apos;t have to.
+        <p className="text-lg text-ink/60 dark:text-paper/60 max-w-xl leading-relaxed">
+          Finding a place to work shouldn&apos;t be a gamble. We test the Wi-Fi, track prices, and rate the vibes, so you don&apos;t have to.
         </p>
       </section>
 
@@ -92,15 +82,15 @@ export default function AboutPage() {
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-100 dark:border-stone-800"
+              className="bg-paper dark:bg-ink-soft rounded-xl p-6 border border-ink/8 dark:border-paper/10"
             >
               <div className={`w-10 h-10 flex items-center justify-center rounded-xl ${pillar.accent} mb-4`}>
                 {pillar.icon}
               </div>
-              <h3 className="text-base font-semibold text-stone-900 dark:text-stone-50 mb-1.5">
+              <h3 className="text-base font-semibold text-ink dark:text-paper mb-1.5">
                 {pillar.title}
               </h3>
-              <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+              <p className="text-sm text-ink/55 dark:text-paper/55 leading-relaxed">
                 {pillar.description}
               </p>
             </div>
@@ -110,14 +100,9 @@ export default function AboutPage() {
 
       {/* Methodology */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-20">
-        <div className="mb-10">
-          <p className="text-xs font-medium tracking-widest uppercase text-amber-600 dark:text-amber-500 mb-2">
-            How it works
-          </p>
-          <h2 className="font-display text-3xl text-stone-900 dark:text-stone-50">
-            Our process
-          </h2>
-        </div>
+        <h2 className="font-display text-3xl text-ink dark:text-paper mb-10">
+          Our process
+        </h2>
 
         <div className="space-y-0">
           {steps.map((step, index) => (
@@ -127,22 +112,22 @@ export default function AboutPage() {
             >
               {/* Timeline */}
               <div className="flex flex-col items-center">
-                <div className="w-9 h-9 rounded-full bg-stone-100 dark:bg-stone-800 border-2 border-white dark:border-stone-900 flex items-center justify-center z-10 shadow-sm">
-                  <span className="text-xs font-bold text-stone-500 dark:text-stone-400">
+                <div className="w-9 h-9 rounded-full bg-palm-soft dark:bg-palm-deep/30 border-2 border-paper dark:border-ink flex items-center justify-center z-10">
+                  <span className="text-xs font-bold text-palm-deep dark:text-palm">
                     {index + 1}
                   </span>
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="w-px flex-1 bg-stone-200 dark:bg-stone-800 mt-1" />
+                  <div className="w-px flex-1 bg-ink/10 dark:bg-paper/15 mt-1" />
                 )}
               </div>
 
               {/* Content */}
               <div className="pt-1 pb-2">
-                <h3 className="text-lg font-semibold text-stone-900 dark:text-stone-50 mb-1">
+                <h3 className="text-lg font-semibold text-ink dark:text-paper mb-1">
                   {step.title}
                 </h3>
-                <p className="text-sm text-stone-500 dark:text-stone-400 leading-relaxed">
+                <p className="text-sm text-ink/55 dark:text-paper/55 leading-relaxed">
                   {step.description}
                 </p>
               </div>
@@ -153,34 +138,28 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-20">
-        <div className="bg-stone-900 dark:bg-stone-800 rounded-2xl p-8 sm:p-10 text-center relative overflow-hidden">
-          {/* Subtle warm glow */}
-          <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 blur-[80px] -mr-16 -mt-16" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-amber-500/10 blur-[80px] -ml-16 -mb-16" />
+        <div className="bg-ink dark:bg-ink-soft rounded-xl p-8 sm:p-10 relative overflow-hidden">
+          {/* Subtle jungle glow */}
+          <div className="absolute top-0 right-0 w-48 h-48 bg-palm/20 blur-[80px] -mr-16 -mt-16" />
 
-          <div className="relative z-10">
-            <h2 className="font-display text-2xl sm:text-3xl text-white mb-3">
-              Founded in Siem Reap,
-              <br />
-              for the world.
+          <div className="relative z-10 max-w-lg">
+            <h2 className="font-display text-2xl sm:text-3xl text-paper mb-3">
+              Founded in Siem Reap, for the world.
             </h2>
-            <p className="text-stone-400 mb-8 max-w-lg mx-auto text-sm leading-relaxed">
-              We started this directory because we were tired of &ldquo;work-friendly&rdquo; cafe lists that were just paid ads. Every review is independent.
+            <p className="text-paper/60 mb-8 text-sm leading-relaxed">
+              We started this directory because we were tired of &ldquo;work-friendly&rdquo; café lists that were just paid ads. Every review is independent.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap gap-3">
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-stone-900 rounded-xl text-sm font-semibold hover:bg-stone-100 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-palm text-paper rounded-xl text-sm font-semibold hover:bg-palm-deep transition-colors"
               >
-                Explore cafes
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                Explore cafés
               </Link>
               <a
                 href="mailto:hello@siemreapcafes.com?subject=Hello"
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 text-white border border-white/15 rounded-xl text-sm font-medium hover:bg-white/15 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-paper/10 text-paper border border-paper/15 rounded-xl text-sm font-medium hover:bg-paper/15 transition-colors"
               >
                 Get in touch
               </a>
@@ -191,7 +170,7 @@ export default function AboutPage() {
 
       {/* Footer note */}
       <div className="text-center">
-        <p className="text-xs text-stone-400 dark:text-stone-600">
+        <p className="text-xs text-ink/35 dark:text-paper/30">
           Last updated March 2026
         </p>
       </div>

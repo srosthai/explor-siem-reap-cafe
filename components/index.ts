@@ -1,11 +1,11 @@
 export { TopNav } from './TopNav';
 export { Footer } from './Footer';
 export { CafeCard } from './CafeCard';
+export { CafeListItem } from './CafeListItem';
 export { CafeGrid } from './CafeGrid';
+export { CafeMapView } from './CafeMapView';
 export { EmptyState } from './EmptyState';
-export { HeroImage } from './HeroImage';
-export { StatPills } from './StatPills';
 export { GalleryGrid } from './GalleryGrid';
 export { Lightbox } from './Lightbox';
-export { VibeTags } from './VibeTags';
 export { ShareButton } from './ShareButton';
+export { BackButton } from './BackButton';

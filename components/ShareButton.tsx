@@ -32,12 +32,12 @@ export function ShareButton({ title, url }: ShareButtonProps) {
   return (
     <button
       onClick={handleShare}
-      className="inline-flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-200 rounded-xl text-sm font-medium hover:bg-stone-50 dark:hover:bg-stone-700 transition-colors border border-stone-200 dark:border-stone-700 shadow-sm"
+      className="inline-flex items-center gap-2 px-5 py-2.5 bg-paper dark:bg-ink-soft text-ink/70 dark:text-paper/70 rounded-xl text-sm font-medium hover:bg-paper-soft dark:hover:bg-ink transition-colors border border-ink/12 dark:border-paper/15 shadow-sm"
     >
       {copied ? (
         <>
           <svg
-            className="w-4 h-4 text-emerald-500"
+            className="w-4 h-4 text-palm"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

@@ -68,19 +68,20 @@ export function sortCafes(cafes: Cafe[], sortBy: SortOption): Cafe[] {
 
 export function getWifiSpeedLabel(mbps: number): {
   label: string;
-  emoji: string;
+  bars: number;
   colorClass: string;
+  textClass: string;
 } {
   if (mbps < 10) {
-    return { label: 'Slow', emoji: '😭', colorClass: 'bg-red-100 text-red-700' };
+    return { label: 'Slow', bars: 1, colorClass: 'bg-clay-soft text-clay', textClass: 'text-clay' };
   }
   if (mbps < 30) {
-    return { label: 'OK', emoji: '👌', colorClass: 'bg-yellow-100 text-yellow-700' };
+    return { label: 'OK', bars: 2, colorClass: 'bg-gold-soft text-gold', textClass: 'text-gold' };
   }
   if (mbps < 80) {
-    return { label: 'Fast', emoji: '⚡', colorClass: 'bg-green-100 text-green-700' };
+    return { label: 'Fast', bars: 3, colorClass: 'bg-palm-soft text-palm', textClass: 'text-palm' };
   }
-  return { label: 'Insane', emoji: '🚀', colorClass: 'bg-purple-100 text-purple-700' };
+  return { label: 'Insane', bars: 4, colorClass: 'bg-palm-soft text-palm-deep', textClass: 'text-palm-deep' };
 }
 
 export function formatTime(time: string): string {
@@ -113,6 +114,6 @@ export function getOpenStatus(open: string, close: string): {
 
   return {
     isOpen,
-    label: isOpen ? `Open until ${closeFormatted}` : `Closed · Opens ${openFormatted}`,
+    label: isOpen ? `Open until ${closeFormatted}` : `Closed, opens ${openFormatted}`,
   };
 }

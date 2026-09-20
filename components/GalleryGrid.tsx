@@ -26,8 +26,8 @@ export function GalleryGrid({ images, cafeName }: GalleryGridProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-stone-900 rounded-2xl p-5 border border-stone-100 dark:border-stone-800">
-      <h2 className="text-xs font-medium text-stone-400 dark:text-stone-500 uppercase tracking-wider mb-4">
+    <div className="bg-paper dark:bg-ink-soft rounded-xl p-5 border border-ink/8 dark:border-paper/10">
+      <h2 className="text-sm font-medium text-ink/55 dark:text-paper/55 mb-4">
         Gallery
       </h2>
 
@@ -36,7 +36,7 @@ export function GalleryGrid({ images, cafeName }: GalleryGridProps) {
           <button
             key={image}
             onClick={() => handleImageClick(index)}
-            className="relative aspect-square rounded-xl overflow-hidden group focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-stone-900"
+            className="relative aspect-square rounded-lg overflow-hidden group focus:outline-none focus:ring-2 focus:ring-palm focus:ring-offset-2 dark:focus:ring-offset-ink-soft"
           >
             <Image
               src={image}

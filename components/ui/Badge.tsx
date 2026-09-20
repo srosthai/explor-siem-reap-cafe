@@ -1,37 +1,21 @@
-import { getWifiSpeedLabel } from '@/lib/cafes';
-
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'default' | 'wifi' | 'area' | 'tag';
-  wifiSpeed?: number;
+  variant?: 'default' | 'area' | 'tag';
   className?: string;
 }
 
 export function Badge({
   children,
   variant = 'default',
-  wifiSpeed,
   className = '',
 }: BadgeProps) {
   const baseStyles =
     'inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium';
 
-  if (variant === 'wifi' && wifiSpeed !== undefined) {
-    const { emoji, colorClass } = getWifiSpeedLabel(wifiSpeed);
-    const isInsane = wifiSpeed >= 80;
-    return (
-      <span
-        className={`${baseStyles} ${colorClass} ${isInsane ? 'wifi-badge-fast' : ''} ${className}`}
-      >
-        {emoji} {wifiSpeed} Mbps
-      </span>
-    );
-  }
-
   if (variant === 'area') {
     return (
       <span
-        className={`${baseStyles} bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400 ${className}`}
+        className={`${baseStyles} bg-paper/90 text-ink backdrop-blur-sm ${className}`}
       >
         {children}
       </span>
@@ -41,7 +25,7 @@ export function Badge({
   if (variant === 'tag') {
     return (
       <span
-        className={`${baseStyles} bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 ${className}`}
+        className={`${baseStyles} bg-ink/5 dark:bg-paper/10 text-ink/70 dark:text-paper/70 ${className}`}
       >
         {children}
       </span>
@@ -49,31 +33,8 @@ export function Badge({
   }
 
   return (
-    <span className={`${baseStyles} bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 ${className}`}>
+    <span className={`${baseStyles} bg-ink/5 dark:bg-paper/10 text-ink/70 dark:text-paper/70 ${className}`}>
       {children}
-    </span>
-  );
-}
-
-export function WifiBadge({
-  speed,
-  showLabel = false,
-  className = '',
-}: {
-  speed: number;
-  showLabel?: boolean;
-  className?: string;
-}) {
-  const { label, emoji, colorClass } = getWifiSpeedLabel(speed);
-  const isInsane = speed >= 80;
-
-  return (
-    <span
-      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold ${colorClass} ${isInsane ? 'wifi-badge-fast' : ''} ${className}`}
-    >
-      <span>{emoji}</span>
-      <span>{speed} Mbps</span>
-      {showLabel && <span className="opacity-75">· {label}</span>}
     </span>
   );
 }

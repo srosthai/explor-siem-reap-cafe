@@ -3,13 +3,31 @@
 @variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-sans: var(--font-jakarta), system-ui, sans-serif;
-  --font-serif: var(--font-serif-display), Georgia, serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+
+  /* Brand palette — Siem Reap café directory
+     paper: sun-bleached rice paper background
+     ink: deep palm-shadow near-black, doubles as dark-mode surface
+     palm: jungle canopy green — primary accent (links, CTAs, "open" state)
+     clay: terracotta roof-tile — secondary accent (price, trending, weak signal)
+     gold: marigold offering flowers — tertiary accent (ratings, ok signal) */
+  --color-paper: #f7f1e1;
+  --color-paper-soft: #efe6cd;
+  --color-ink: #1c2a20;
+  --color-ink-soft: #263a2c;
+  --color-palm: #2f6f52;
+  --color-palm-deep: #1e4a38;
+  --color-palm-soft: #e3ecdf;
+  --color-clay: #bd5f2c;
+  --color-clay-soft: #f5e2d1;
+  --color-gold: #b8862f;
+  --color-gold-soft: #f2e6c9;
 }
 
 /* Base styles */
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-manrope), system-ui, sans-serif;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,7 +35,8 @@ body {
 
 /* Serif display headings */
 .font-display {
-  font-family: var(--font-serif);
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-optical-sizing: auto;
 }
 
 /* Card Hover Effect — refined, subtle lift */
@@ -29,14 +48,14 @@ body {
 .card-hover:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 12px 32px -8px rgba(0, 0, 0, 0.08),
-    0 4px 8px -2px rgba(0, 0, 0, 0.04);
+    0 12px 28px -10px rgba(28, 42, 32, 0.18),
+    0 4px 8px -4px rgba(28, 42, 32, 0.08);
 }
 
 .dark .card-hover:hover {
   box-shadow:
-    0 12px 32px -8px rgba(0, 0, 0, 0.4),
-    0 4px 8px -2px rgba(0, 0, 0, 0.2);
+    0 12px 28px -10px rgba(0, 0, 0, 0.45),
+    0 4px 8px -4px rgba(0, 0, 0, 0.25);
 }
 
 /* Button Press Effect */
@@ -64,7 +83,7 @@ body {
     to bottom,
     transparent 0%,
     transparent 40%,
-    rgba(0, 0, 0, 0.55) 100%
+    rgba(15, 20, 16, 0.6) 100%
   );
 }
 
@@ -81,9 +100,9 @@ body {
 .skeleton {
   background: linear-gradient(
     90deg,
-    #e7e5e4 25%,
-    #d6d3d1 50%,
-    #e7e5e4 75%
+    var(--color-paper-soft) 25%,
+    #e3d8b8 50%,
+    var(--color-paper-soft) 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
@@ -92,23 +111,23 @@ body {
 .dark .skeleton {
   background: linear-gradient(
     90deg,
-    #292524 25%,
-    #44403c 50%,
-    #292524 75%
+    var(--color-ink-soft) 25%,
+    #30473a 50%,
+    var(--color-ink-soft) 75%
   );
   background-size: 200% 100%;
 }
 
 /* Lightbox Overlay */
 .lightbox-overlay {
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(12, 17, 13, 0.94);
   backdrop-filter: blur(12px);
 }
 
-/* Focus States — warm amber ring */
+/* Focus States — palm ring */
 .focus-ring:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3);
+  box-shadow: 0 0 0 3px rgba(47, 111, 82, 0.35);
 }
 
 /* Top nav spacing */
@@ -132,9 +151,29 @@ main {
   animation: fadeInUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-/* Wi-Fi speed indicator bar */
-.wifi-bar {
-  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+/* Wi-Fi signal bars */
+.signal-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 13px;
+}
+
+.signal-bars > span {
+  display: block;
+  width: 3px;
+  background-color: currentColor;
+  opacity: 0.18;
+  border-radius: 1px;
+}
+
+.signal-bars > span:nth-child(1) { height: 35%; }
+.signal-bars > span:nth-child(2) { height: 58%; }
+.signal-bars > span:nth-child(3) { height: 80%; }
+.signal-bars > span:nth-child(4) { height: 100%; }
+
+.signal-bars > span.is-filled {
+  opacity: 1;
 }
 
 /* Subtle grain texture overlay for depth */
@@ -142,12 +181,12 @@ main {
   content: '';
   position: fixed;
   inset: 0;
-  opacity: 0.015;
+  opacity: 0.02;
   pointer-events: none;
   z-index: 9999;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 .dark .grain::before {
-  opacity: 0.03;
+  opacity: 0.035;
 }

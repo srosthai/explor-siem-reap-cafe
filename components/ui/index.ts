@@ -1,6 +1,6 @@
-export { Badge, WifiBadge } from './Badge';
+export { Badge } from './Badge';
+export { WifiSignal } from './WifiSignal';
 export { Button } from './Button';
 export { SearchInput } from './SearchInput';
-export { FilterChips } from './FilterChips';
 export { FilterSelect } from './FilterSelect';
 export { SortDropdown } from './SortDropdown';

@@ -27,12 +27,10 @@ export function Button({
     'inline-flex items-center justify-center gap-2 font-medium rounded-xl transition-colors';
 
   const variants = {
-    primary:
-      'bg-stone-900 dark:bg-white text-white dark:text-stone-900 hover:bg-stone-800 dark:hover:bg-stone-100',
+    primary: 'bg-palm text-paper hover:bg-palm-deep',
     secondary:
-      'bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 text-stone-700 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-stone-800',
-    ghost:
-      'bg-transparent text-stone-600 dark:text-stone-400 hover:bg-stone-100 dark:hover:bg-stone-800',
+      'bg-paper dark:bg-ink-soft border border-ink/12 dark:border-paper/15 text-ink/70 dark:text-paper/70 hover:bg-paper-soft dark:hover:bg-ink',
+    ghost: 'bg-transparent text-ink/65 dark:text-paper/65 hover:bg-ink/5 dark:hover:bg-paper/10',
   };
 
   const sizes = {

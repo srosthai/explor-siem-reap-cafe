@@ -1,20 +1,20 @@
 import type { Metadata, Viewport } from 'next';
-import { Plus_Jakarta_Sans, DM_Serif_Display } from 'next/font/google';
+import { Manrope, Fraunces } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { TopNav } from '@/components/TopNav';
 import { Footer } from '@/components/Footer';
 import './globals.css';
 
-const jakarta = Plus_Jakarta_Sans({
-  variable: '--font-jakarta',
+const manrope = Manrope({
+  variable: '--font-manrope',
   subsets: ['latin'],
   display: 'swap',
 });
 
-const dmSerif = DM_Serif_Display({
-  variable: '--font-serif-display',
-  weight: '400',
+const fraunces = Fraunces({
+  variable: '--font-fraunces',
   subsets: ['latin'],
+  axes: ['opsz', 'SOFT'],
   display: 'swap',
 });
 
@@ -25,8 +25,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#fafaf9' },
-    { media: '(prefers-color-scheme: dark)', color: '#0c0a09' },
+    { media: '(prefers-color-scheme: light)', color: '#f7f1e1' },
+    { media: '(prefers-color-scheme: dark)', color: '#1c2a20' },
   ],
 };
 
@@ -114,7 +114,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
       <body
-        className={`${jakarta.variable} ${dmSerif.variable} antialiased bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 transition-colors`}
+        className={`${manrope.variable} ${fraunces.variable} antialiased bg-paper dark:bg-ink text-ink dark:text-paper transition-colors`}
         suppressHydrationWarning
       >
         <ThemeProvider>

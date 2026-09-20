@@ -24,7 +24,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            background: 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)',
+            background: 'linear-gradient(135deg, #2F6F52 0%, #1E4A38 100%)',
           }}
         >
           <span style={{ color: 'white', fontSize: '48px' }}>Cafe Not Found</span>
@@ -41,7 +41,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           height: '100%',
           width: '100%',
           display: 'flex',
-          background: 'linear-gradient(135deg, #1f2937 0%, #111827 100%)',
+          background: 'linear-gradient(135deg, #1c2a20 0%, #12201a 100%)',
         }}
       >
         {/* Left side - Content */}
@@ -65,12 +65,12 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             <svg width="40" height="40" viewBox="0 0 100 100">
               <path
                 d="M15 35 L15 75 Q15 90 30 90 L60 90 Q75 90 75 75 L75 35 Z"
-                fill="#8B5CF6"
+                fill="#2F6F52"
               />
               <path
                 d="M75 45 Q95 45 95 60 Q95 75 75 75"
                 fill="none"
-                stroke="#8B5CF6"
+                stroke="#2F6F52"
                 strokeWidth="8"
                 strokeLinecap="round"
               />
@@ -95,7 +95,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           >
             <span
               style={{
-                background: '#8B5CF6',
+                background: '#2F6F52',
                 color: 'white',
                 padding: '8px 20px',
                 borderRadius: '50px',
@@ -128,19 +128,19 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             }}
           >
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#10B981' }}>
+              <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#79b896' }}>
                 {cafe.wifi.downloadMbps}
               </span>
               <span style={{ fontSize: '16px', color: '#9CA3AF' }}>Mbps Wi-Fi</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#F59E0B' }}>
+              <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#d9a441' }}>
                 ${cafe.minPriceUsd.toFixed(2)}
               </span>
               <span style={{ fontSize: '16px', color: '#9CA3AF' }}>Min. Price</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#8B5CF6' }}>
+              <span style={{ fontSize: '36px', fontWeight: 'bold', color: '#2F6F52' }}>
                 {cafe.tags.length}
               </span>
               <span style={{ fontSize: '16px', color: '#9CA3AF' }}>Amenities</span>
@@ -155,7 +155,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            background: 'linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%)',
+            background: 'linear-gradient(135deg, #2F6F52 0%, #1E4A38 100%)',
           }}
         >
           <svg width="200" height="200" viewBox="0 0 100 100">

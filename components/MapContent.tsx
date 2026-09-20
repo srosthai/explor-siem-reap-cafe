@@ -35,11 +35,11 @@ export function MapContent({ cafes, isFullScreen = false }: MapContentProps) {
 
   const containerClass = isFullScreen
     ? ''
-    : 'bg-white dark:bg-gray-900 rounded-2xl shadow-sm overflow-hidden';
+    : 'bg-paper dark:bg-ink-soft rounded-xl border border-ink/8 dark:border-paper/10 overflow-hidden';
 
   const mapClass = isFullScreen
     ? mapHeightClass
-    : `rounded-2xl ${mapHeightClass} w-full`;
+    : `rounded-xl ${mapHeightClass} w-full`;
 
   return (
     <div className={containerClass}>
@@ -61,23 +61,23 @@ export function MapContent({ cafes, isFullScreen = false }: MapContentProps) {
             >
               <Popup>
                 <div className="min-w-[200px]">
-                  <h3 className="font-semibold text-gray-900 mb-1">{cafe.name}</h3>
-                  <p className="text-sm text-gray-500 mb-2">{cafe.area}</p>
+                  <h3 className="font-semibold text-ink mb-1">{cafe.name}</h3>
+                  <p className="text-sm text-ink/55 mb-2">{cafe.area}</p>
                   <div className="flex items-center gap-2 mb-2 text-xs">
                     <span className={`px-2 py-0.5 rounded font-medium ${
                       openStatus.isOpen
-                        ? 'bg-emerald-100 text-emerald-700'
-                        : 'bg-gray-100 text-gray-600'
+                        ? 'bg-palm-soft text-palm-deep'
+                        : 'bg-ink/5 text-ink/55'
                     }`}>
                       {openStatus.isOpen ? 'Open' : 'Closed'}
                     </span>
-                    <span className="text-gray-600">{cafe.wifi.downloadMbps} Mbps</span>
+                    <span className="text-ink/55">{cafe.wifi.downloadMbps} Mbps</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium">${cafe.minPriceUsd.toFixed(2)}</span>
                     <Link
                       href={`/cafe/${cafe.slug}`}
-                      className="text-sm font-medium text-violet-600 hover:text-violet-700"
+                      className="text-sm font-medium text-palm hover:text-palm-deep"
                     >
                       View details
                     </Link>

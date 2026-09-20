@@ -64,20 +64,20 @@ export function CafeGrid({ cafes }: CafeGridProps) {
       {/* Results Count and View Toggle */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <p className="text-sm text-stone-500 dark:text-stone-400 tabular-nums">
+          <p className="text-sm text-ink/55 dark:text-paper/55 tabular-nums">
             {filteredAndSortedCafes.length} cafe{filteredAndSortedCafes.length !== 1 ? 's' : ''}
           </p>
           {hasActiveFilters && (
             <button
               onClick={handleClearFilters}
-              className="text-xs font-medium text-amber-600 dark:text-amber-500 hover:text-amber-700 dark:hover:text-amber-400 transition-colors"
+              className="text-xs font-medium text-palm hover:text-palm-deep dark:hover:text-palm-soft transition-colors"
             >
               Reset filters
             </button>
           )}
         </div>
 
-        <div className="flex items-center bg-stone-100 dark:bg-stone-800/60 rounded-lg p-0.5">
+        <div className="flex items-center bg-ink/5 dark:bg-paper/10 rounded-lg p-0.5">
           {[
             { mode: 'grid' as ViewMode, icon: (
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,8 +101,8 @@ export function CafeGrid({ cafes }: CafeGridProps) {
               onClick={() => setViewMode(mode)}
               className={`p-1.5 rounded-md transition-all ${
                 viewMode === mode
-                  ? 'bg-white dark:bg-stone-700 text-stone-900 dark:text-white shadow-sm'
-                  : 'text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300'
+                  ? 'bg-paper dark:bg-ink-soft text-ink dark:text-paper shadow-sm'
+                  : 'text-ink/40 dark:text-paper/40 hover:text-ink/70 dark:hover:text-paper/70'
               }`}
               aria-label={`${mode} view`}
             >
@@ -146,7 +146,7 @@ export function CafeGrid({ cafes }: CafeGridProps) {
           action={
             <button
               onClick={handleClearFilters}
-              className="px-5 py-2.5 bg-stone-900 dark:bg-white text-white dark:text-stone-900 rounded-xl text-sm font-medium hover:bg-stone-800 dark:hover:bg-stone-100 transition-colors"
+              className="px-5 py-2.5 bg-palm text-paper rounded-xl text-sm font-medium hover:bg-palm-deep transition-colors"
             >
               Clear filters
             </button>

@@ -12,29 +12,29 @@ describe('getWifiSpeedLabel', () => {
     it('returns "Slow" for speeds under 10 Mbps', () => {
         const result = getWifiSpeedLabel(5);
         expect(result.label).toBe('Slow');
-        expect(result.emoji).toBe('😭');
-        expect(result.colorClass).toContain('red');
+        expect(result.bars).toBe(1);
+        expect(result.textClass).toContain('clay');
     });
 
     it('returns "OK" for speeds 10-30 Mbps', () => {
         const result = getWifiSpeedLabel(20);
         expect(result.label).toBe('OK');
-        expect(result.emoji).toBe('👌');
-        expect(result.colorClass).toContain('yellow');
+        expect(result.bars).toBe(2);
+        expect(result.textClass).toContain('gold');
     });
 
     it('returns "Fast" for speeds 30-80 Mbps', () => {
         const result = getWifiSpeedLabel(50);
         expect(result.label).toBe('Fast');
-        expect(result.emoji).toBe('⚡');
-        expect(result.colorClass).toContain('green');
+        expect(result.bars).toBe(3);
+        expect(result.textClass).toContain('palm');
     });
 
     it('returns "Insane" for speeds 80+ Mbps', () => {
         const result = getWifiSpeedLabel(100);
         expect(result.label).toBe('Insane');
-        expect(result.emoji).toBe('🚀');
-        expect(result.colorClass).toContain('purple');
+        expect(result.bars).toBe(4);
+        expect(result.textClass).toContain('palm-deep');
     });
 });
 
