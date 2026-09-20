@@ -60,14 +60,6 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  icons: {
-    icon: [
-      { url: '/images/logo-icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: [
-      { url: '/images/logo-icon.svg', type: 'image/svg+xml' },
-    ],
-  },
   manifest: '/manifest.json',
   openGraph: {
     type: 'website',

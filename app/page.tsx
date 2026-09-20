@@ -25,7 +25,7 @@ export default function HomePage() {
     '@type': 'Organization',
     name: 'Siem Reap Cafes',
     url: process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com'}/images/logo-icon.svg`,
+    logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://siemreapcafes.com'}/images/logo.png`,
     description: 'Your guide to the best cafes in Siem Reap, Cambodia for digital nomads and coffee lovers.',
     areaServed: {
       '@type': 'City',

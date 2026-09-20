@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-20T10:17:13Z",
+  "title": "Design System: Siem Reap Cafes",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Sun-Bleached Rice Paper", "canonical": "#f7f1e1", "tonalRamp": ["#1c2a20", "#33463a", "#4d6455", "#6d8577", "#93a89a", "#c1cbb8", "#e3dcc0", "#f7f1e1"] },
+      "paper-soft": { "role": "neutral", "displayName": "Deep Paper", "canonical": "#efe6cd", "tonalRamp": ["#1c2a20", "#33463a", "#4d6455", "#6d8577", "#93a89a", "#c1cbb8", "#ddd3b0", "#efe6cd"] },
+      "ink": { "role": "neutral", "displayName": "Palm-Shadow Ink", "canonical": "#1c2a20", "tonalRamp": ["#0c1310", "#1c2a20", "#2c4132", "#3f5c47", "#597862", "#7e9c86", "#aec3ac", "#dbe6d5"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Palm Shadow", "canonical": "#263a2c", "tonalRamp": ["#0c1310", "#1c2a20", "#263a2c", "#3f5c47", "#597862", "#7e9c86", "#aec3ac", "#dbe6d5"] },
+      "palm": { "role": "primary", "displayName": "Jungle Canopy Green", "canonical": "#2f6f52", "tonalRamp": ["#102019", "#1e4a38", "#2f6f52", "#428a6a", "#5ba586", "#8ac2a8", "#bcdfcc", "#e3ecdf"] },
+      "palm-deep": { "role": "primary", "displayName": "Deep Canopy", "canonical": "#1e4a38", "tonalRamp": ["#0a150f", "#1e4a38", "#2f6f52", "#428a6a", "#5ba586", "#8ac2a8", "#bcdfcc", "#e3ecdf"] },
+      "palm-soft": { "role": "primary", "displayName": "Canopy Tint", "canonical": "#e3ecdf", "tonalRamp": ["#1e4a38", "#2f6f52", "#428a6a", "#5ba586", "#8ac2a8", "#bcdfcc", "#d6e5d1", "#e3ecdf"] },
+      "clay": { "role": "secondary", "displayName": "Terracotta Roof-Tile", "canonical": "#bd5f2c", "tonalRamp": ["#3d1e0e", "#6e3819", "#96491f", "#bd5f2c", "#d47f4f", "#e3a37c", "#efc4ab", "#f5e2d1"] },
+      "clay-soft": { "role": "secondary", "displayName": "Clay Tint", "canonical": "#f5e2d1", "tonalRamp": ["#96491f", "#bd5f2c", "#d47f4f", "#e3a37c", "#efc4ab", "#f5e2d1", "#f9ecdd", "#fdf7f0"] },
+      "gold": { "role": "tertiary", "displayName": "Marigold Offering", "canonical": "#b8862f", "tonalRamp": ["#392a0f", "#6a4e19", "#93701f", "#b8862f", "#cfa356", "#dfc189", "#eeddbe", "#f2e6c9"] },
+      "gold-soft": { "role": "tertiary", "displayName": "Marigold Tint", "canonical": "#f2e6c9", "tonalRamp": ["#93701f", "#b8862f", "#cfa356", "#dfc189", "#eeddbe", "#f2e6c9", "#f7edda", "#fbf5ea"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display (Fraunces)", "purpose": "Page and section H1 headings only; never used in UI chrome." },
+      "body": { "displayName": "Body (Manrope)", "purpose": "All body copy, descriptions, and notes." },
+      "label": { "displayName": "Label (Manrope, medium)", "purpose": "Badges, nav links, stat values, timestamps — often tabular-nums." }
+    },
+    "shadows": [
+      { "name": "card-hover-lift", "value": "0 12px 28px -10px rgba(28, 42, 32, 0.18), 0 4px 8px -4px rgba(28, 42, 32, 0.08)", "purpose": "Only shadow a card ever shows; appears on hover as a 3px lift." },
+      { "name": "floating-chrome", "value": "shadow-lg (Tailwind default) + backdrop-blur-xl", "purpose": "Nav pill and dropdown menus, to separate floating chrome from scrolling content." },
+      { "name": "trending-badge-glow", "value": "0 10px 15px -3px rgba(189, 95, 44, 0.3)", "purpose": "Low-opacity clay-tinted glow tying the Trending badge to its accent color." }
+    ],
+    "motion": [
+      { "name": "card-hover", "value": "transform/box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Card lift and shadow-in on hover." },
+      { "name": "btn-press", "value": "transform 0.1s ease, scale(0.97) on :active", "purpose": "Tactile press feedback on all interactive buttons." },
+      { "name": "fade-in-up", "value": "opacity + translateY(12px→0), 0.4s cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Staggered entrance animation for grid cards." },
+      { "name": "shimmer", "value": "background-position -200%→200%, 1.5s infinite linear", "purpose": "Skeleton loading state." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call-to-action button (e.g. 'Explore cafés').",
+      "html": "<button class=\"ds-btn-primary\">Explore cafés</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 500; font-family: var(--font-manrope, system-ui, sans-serif); border-radius: 12px; padding: 8px 16px; font-size: 0.875rem; background: #2f6f52; color: #f7f1e1; border: none; transition: background-color 0.2s, transform 0.1s ease; } .ds-btn-primary:hover { background: #1e4a38; } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(47, 111, 82, 0.35); } .ds-btn-primary:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Lower-emphasis button on a paper surface.",
+      "html": "<button class=\"ds-btn-secondary\">Get in touch</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 500; font-family: var(--font-manrope, system-ui, sans-serif); border-radius: 12px; padding: 8px 16px; font-size: 0.875rem; background: #f7f1e1; color: rgba(28,42,32,0.7); border: 1px solid rgba(28,42,32,0.12); transition: background-color 0.2s; } .ds-btn-secondary:hover { background: #efe6cd; }"
+    },
+    {
+      "name": "Café Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The core content unit of the explore grid — image, name, price, area, Wi-Fi.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-image\"></div><div class=\"ds-card-body\"><div class=\"ds-card-title-row\"><h3 class=\"ds-card-title\">Little Red Fox Espresso</h3><span class=\"ds-card-price\">$2.00</span></div><p class=\"ds-card-meta\">Wat Bo · Open now</p></div></article>",
+      "css": ".ds-card { background: #f7f1e1; border-radius: 12px; overflow: hidden; border: 1px solid rgba(28,42,32,0.08); transition: transform 0.25s cubic-bezier(0.22,1,0.36,1), box-shadow 0.25s cubic-bezier(0.22,1,0.36,1), border-color 0.2s; } .ds-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -10px rgba(28,42,32,0.18), 0 4px 8px -4px rgba(28,42,32,0.08); border-color: rgba(47,111,82,0.4); } .ds-card-image { aspect-ratio: 16/10; background: #e3ecdf; } .ds-card-body { padding: 16px; } .ds-card-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; } .ds-card-title { font-weight: 600; color: #1c2a20; font-family: var(--font-manrope, system-ui, sans-serif); } .ds-card-price { font-weight: 600; color: #1c2a20; font-variant-numeric: tabular-nums; } .ds-card-meta { font-size: 0.875rem; color: rgba(28,42,32,0.55); }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Debounced search field with leading icon and clear button.",
+      "html": "<div class=\"ds-input-wrap\"><svg class=\"ds-input-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\"/></svg><input class=\"ds-input\" placeholder=\"Search by name, area, or vibe...\" /></div>",
+      "css": ".ds-input-wrap { position: relative; } .ds-input-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: rgba(28,42,32,0.4); } .ds-input { width: 100%; padding: 10px 16px 10px 44px; background: #f7f1e1; border: 1px solid rgba(28,42,32,0.12); border-radius: 12px; font-size: 0.875rem; color: #1c2a20; font-family: var(--font-manrope, system-ui, sans-serif); transition: box-shadow 0.2s, border-color 0.2s; } .ds-input::placeholder { color: rgba(28,42,32,0.35); } .ds-input:focus { outline: none; box-shadow: 0 0 0 2px rgba(47,111,82,0.3); border-color: rgba(47,111,82,0.5); }"
+    },
+    {
+      "name": "Area Badge",
+      "kind": "chip",
+      "refersTo": "badge-area",
+      "description": "Translucent pill badge overlaid on a photo (e.g. area name).",
+      "html": "<span class=\"ds-badge-area\">Wat Bo</span>",
+      "css": ".ds-badge-area { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; background: rgba(247,241,225,0.9); color: #1c2a20; backdrop-filter: blur(4px); font-family: var(--font-manrope, system-ui, sans-serif); }"
+    },
+    {
+      "name": "Wi-Fi Signal",
+      "kind": "custom",
+      "refersTo": "wifi-signal",
+      "description": "Signature component: 4-bar signal indicator colored by speed tier, paired with the Mbps reading.",
+      "html": "<span class=\"ds-wifi ds-wifi--fast\"><span class=\"ds-wifi-bars\"><span class=\"is-filled\"></span><span class=\"is-filled\"></span><span class=\"is-filled\"></span><span></span></span><span class=\"ds-wifi-value\">65 Mbps</span></span>",
+      "css": ".ds-wifi { display: inline-flex; align-items: center; gap: 6px; } .ds-wifi--slow { color: #bd5f2c; } .ds-wifi--ok { color: #b8862f; } .ds-wifi--fast { color: #2f6f52; } .ds-wifi--insane { color: #1e4a38; } .ds-wifi-bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 13px; } .ds-wifi-bars > span { display: block; width: 3px; background-color: currentColor; opacity: 0.18; border-radius: 1px; } .ds-wifi-bars > span:nth-child(1) { height: 35%; } .ds-wifi-bars > span:nth-child(2) { height: 58%; } .ds-wifi-bars > span:nth-child(3) { height: 80%; } .ds-wifi-bars > span:nth-child(4) { height: 100%; } .ds-wifi-bars > span.is-filled { opacity: 1; } .ds-wifi-value { font-weight: 600; font-variant-numeric: tabular-nums; font-family: var(--font-manrope, system-ui, sans-serif); }"
+    },
+    {
+      "name": "Top Nav",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Floating centered pill navigation with active-link fill and theme toggle.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link ds-nav-link--active\">Explore</a><a class=\"ds-nav-link\">About</a></nav>",
+      "css": ".ds-nav { display: inline-flex; align-items: center; gap: 4px; padding: 6px; border-radius: 9999px; background: rgba(247,241,225,0.85); backdrop-filter: blur(20px); border: 1px solid rgba(28,42,32,0.1); box-shadow: 0 10px 15px -3px rgba(28,42,32,0.05); } .ds-nav-link { padding: 6px 14px; border-radius: 9999px; font-size: 0.875rem; font-weight: 500; color: rgba(28,42,32,0.55); font-family: var(--font-manrope, system-ui, sans-serif); transition: all 0.2s; } .ds-nav-link--active { background: #2f6f52; color: #f7f1e1; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Jungle Ledger",
+    "overview": "This is a field notebook, not an ad. The system reads like a traveler's honest ledger of what they found: sun-bleached rice-paper backgrounds, deep palm-shadow ink for text and dark mode, and an earthy three-color accent trio (jungle-canopy green, terracotta roof-tile, marigold offering-flower gold) that stands in for real observations rather than decoration. Fraunces serif display type gives it a warm, slightly literary voice for headlines; Manrope carries the workmanlike UI and body copy. A near-invisible grain texture sits over the whole page, reinforcing the \"printed, not rendered\" feel.\n\nDepth comes from quiet borders and a soft lift on hover, never from heavy drop shadows — the directory should feel calm and legible at a glance, the way a well-kept notebook page does, not like a marketing site competing for attention. Color is used sparingly and functionally: palm green means \"open\" or \"fast Wi-Fi,\" clay means price/trending/weak-signal, gold means a middling or rated signal. Nothing is decorative-only.",
+    "keyCharacteristics": [
+      "Warm, paper-toned neutrals (paper/ink) instead of pure white/black",
+      "Serif display (Fraunces) + workmanlike sans body (Manrope)",
+      "Borders and subtle lift over drop shadows; a fixed grain overlay for texture",
+      "A functional, restrained 3-accent palette (palm/clay/gold) tied to meaning, not mood",
+      "Full-radius pill chrome for nav, badges, and filters; 12px rounded-xl for cards and inputs"
+    ],
+    "rules": [
+      { "name": "The Meaning-Not-Mood Rule", "body": "Palm, clay, and gold are never used as arbitrary decoration — each is tied to a specific signal (open/fast, price/trending/slow, ok-rated). If a new UI element needs a color and it isn't one of these three meanings, it stays neutral (ink/paper at reduced opacity).", "section": "colors" },
+      { "name": "The Serif-Is-Sparing Rule", "body": "Fraunces is reserved for display headings only (.font-display); every interface element — nav, buttons, badges, body copy — stays in Manrope.", "section": "typography" },
+      { "name": "The Hover-Only Elevation Rule", "body": "Nothing has a resting shadow. Shadow only appears as feedback for interaction (hover, floating overlays) — it signals \"this responded to you,\" not \"this is generically important.\"", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the accent palette to palm/clay/gold, each tied to a specific meaning (open-or-fast / price-or-trending-or-slow / ok-rated).",
+      "Do use rounded-full for anything that behaves like navigation or a filter chip, and rounded-xl for content containers.",
+      "Do reserve Fraunces for display headings only; keep every interactive/UI element in Manrope.",
+      "Do let shadow appear only in response to interaction (hover, floating chrome) — never as a resting state."
+    ],
+    "donts": [
+      "Don't introduce a new accent hue outside palm/clay/gold without a new, equally specific meaning behind it — this system doesn't decorate with color.",
+      "Don't add resting drop shadows to cards or static surfaces; use the 1px border + hover-lift pattern instead.",
+      "Don't present the current data/cafes.json Wi-Fi numbers, test dates, or stock gallery photography as verified findings in new copy — they are placeholder data pending real testing.",
+      "Don't sharpen any corner to a hard right angle; every surface in this system is either pill, lg (8px), or xl (12px) radius."
+    ]
+  }
+}
