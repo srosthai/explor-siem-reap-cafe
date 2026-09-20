@@ -88,7 +88,7 @@ export default async function CafeDetailPage({ params }: PageProps) {
       {/* Hero Section — shorter, more focused */}
       <div className="relative h-[50vh] min-h-[400px] max-h-[600px] w-full">
         <Image
-          src={cafe.gallery[0] || '/images/placeholder-cafe.jpg'}
+          src={cafe.gallery[0] || '/images/placeholder-cafe.svg'}
           alt={cafe.name}
           fill
           className="object-cover"

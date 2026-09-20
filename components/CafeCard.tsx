@@ -20,7 +20,7 @@ export function CafeCard({ cafe, priority = false }: CafeCardProps) {
         {/* Image */}
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image
-            src={cafe.gallery[0] || '/images/placeholder-cafe.jpg'}
+            src={cafe.gallery[0] || '/images/placeholder-cafe.svg'}
             alt={cafe.name}
             fill
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
